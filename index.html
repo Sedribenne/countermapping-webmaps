@@ -58,25 +58,8 @@ const map = new mapboxgl.Map({
 
 // mapbox://styles/iamwfx/cl8tluyqd001a14nzpd565em7
 
-map.on('load',function(){
-  // Give your layer's source a nickname you'll remember easily. I've called my source `sandy_layer`.
-  map.addSource('sandy_layer',{
-    'type':'vector',
-    'url':'mapbox://sedribenne.6nba6yx2'
-  });
+map.addControl(new mapboxgl.ScaleControl({position: 'bottom-right'}));
 
-  // add a new layer with your polygons
-  map.addLayer({
-    'id':'flood_zones',
-    'type':'fill',
-    'source':'sandy_layer',
-    'source-layer':'Sandy_Inundation_Zone-aq22ut',
-    'paint':{
-      'fill-color':'#00158f',
-      'fill-opacity': 0.5
-    }
-  })
-});
 
 map.on('load',function(){
   // Give your layer's source a nickname you'll remember easily. I've called my source `sandy_layer`.
@@ -97,6 +80,28 @@ map.on('load',function(){
     }
   })
 });
+
+map.on('load',function(){
+  // Give your layer's source a nickname you'll remember easily. I've called my source `sandy_layer`.
+  map.addSource('sandy_layer',{
+    'type':'vector',
+    'url':'mapbox://sedribenne.6nba6yx2'
+  });
+
+  // add a new layer with your polygons
+  map.addLayer({
+    'id':'flood_zones',
+    'type':'fill',
+    'source':'sandy_layer',
+    'source-layer':'Sandy_Inundation_Zone-aq22ut',
+    'paint':{
+      'fill-color':'#00158f',
+      'fill-opacity': 0.5
+    }
+  })
+});
+
+
 
 // Within a script, you comment using two backslashes.
 </script>
