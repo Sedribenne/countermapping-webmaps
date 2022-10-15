@@ -60,7 +60,7 @@ map.on('load',function(){
   // Give your layer's source a nickname you'll remember easily. I've called my source `sandy_layer`.
   map.addSource('sandy_layer',{
     'type':'vector',
-    'url': 'mapbox://tilesets/sedribenne.0x91bmfa/#12/40.68752/-73.97973'
+    'url': 'mapbox://tilesets/sedribenne.0x91bmfa'
   });
 
   // add a new layer with your polygons
@@ -68,7 +68,7 @@ map.on('load',function(){
     'id':'flood_zones',
     'type':'fill',
     'source':'sandy_layer',
-    'source-layer':'Sandy_Inundation_Zone-UNIQUEID',
+    'source-layer':'Sandy_Inundation_Zone-sedribenne.0x91bmfa',
     'paint':{
       'fill-color':'#00158f',
       'fill-opacity': 0.5
