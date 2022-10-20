@@ -54,12 +54,54 @@
     style: 'mapbox://styles/sedribenne/cl9bwby3n000314po3nbe0n1z', // replace this with your style URL
     center: [-73.935242, 40.730610], // The convention for coordinates is  typically [long, lat]
     zoom: 13,
-    // maxZoom: 22,
-    // minZoom: 12
+    maxZoom: 22,
+    minZoom: 12
   });
 
   map.on('load',function(){
     // Give your layer's source a nickname you'll remember easily.
+
+map.addSource('NYCHA_housing',{
+    'type':'vector',
+    'url':'mapbox://sedribenne.as4pkhib'
+  });
+
+  // add a new layer with your polygons
+  map.addLayer({
+    'id':'Public_housing',
+    'type':'fill',
+    'source':'NYCHA_housing',
+    'source-layer':'Map_of_NYCHA_Developments-6r79tn',
+    'paint':{
+      'fill-color':'#8f2600',
+      'fill-opacity': 0.8
+    }
+  })
+
+    map.addSource('censusLayer',{
+      'type':'vector',
+      'url': 'mapbox://iamwfx.6nowkujs'
+    });
+
+ 	map.addLayer({
+      'id':'povertyLevel',
+      'type':'fill',
+      'source':'censusLayer',
+      'source-layer':'nyc_blck_grp_2020_wcensus_dro-4db43i',
+      'paint':{
+        'fill-color':[
+  'step',
+  ['get','AMR5E002'],
+  '#edf8e9',200,'#bae4b3',400,'#74c476',600,'#31a354',800,'#006d2c'
+],
+        'fill-opacity': 0.9
+      }
+    });
+
+    map.addLayer({
+      'id':'floodZones',
+    });
+
     map.addSource('sandyLayer',{
       'type':'vector',
       'url': 'mapbox://iamwfx.bpjzmy2b'
@@ -73,17 +115,6 @@
     // add a new layer with your polygons
 
     map.addLayer({
-      'id':'nychaBuildings',
-      'type':'fill',
-      'source':'nychaLayer',
-      'source-layer':'Map_of_NYCHA_Developments-7i6vok',
-      'paint':{
-        'fill-color':'red',
-        'fill-opacity': 0.5
-      }
-    })
-
-    map.addLayer({
       'id':'floodZones',
       'type':'fill',
       'source':'sandyLayer',
@@ -93,6 +124,8 @@
         'fill-opacity': 0.5
       }
     });
+
+
   });
   // Within a script, you comment using two backslashes.
   </script>
