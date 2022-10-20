@@ -1,10 +1,18 @@
-<!-- Indicate that you have an html document
+<!-- in this document, I explain how to start coding using the style.css texteditor immediately linked to github so that I can use mapbox to make maps. I will go over 1. setting up an html document 2. Creating a default head and a separate style.css file 3. formatting the body of my file, importing datasources and layers, and altering symbology based on attributes just like in GIS.
+
+<!-- Foreword: When coding, I have a local and remote repo, GitHub is simply a way to communicate between the remote and the local repos so that I can then publish my website. *dab*
+
+1. 
+
+<!-- Indicate that you have an html document, !also label your file with .html!
 
 	`<!-- This is to indicate we have an HTML document -->
 		<!DOCTYPE html>
 
 	<!-- All our code goes within this tag-->
 		<html>
+
+2. 
 
 <!-- here is a default head, all I know is that I need it to get started with mapping in Mapbox
 
@@ -29,7 +37,7 @@
 		<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
 
 		<link href='style.css' rel='stylesheet' />
-			
+	
 			<!-- I NEED to have a separate style.css, this is crucial to the rendering of my page. Also note that this is CASE SENSITIVE, it will only accept style.css if my file is also called style.css and not Style.css. See code in the indented text below: 
 			
 				body {
@@ -73,9 +81,11 @@
 	<!-- This allows us to bring in new fonts -->
 		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
 		</head>
+3.
 
 <!-- The body contains the actual content of a page -->
 	<body>
+
 
 	<!-- This is how I add a Paragraph
 
@@ -181,4 +191,6 @@
 			],
 
 	//This function visually eliminates all of the census blocks where the value of attribute 'AMR5E002' is 300 or less by making it transparent
+
+// OK I am going to make another document just so that this doesn't get too long
 
