@@ -1,1 +1,18 @@
+<!-- This document includes my notes from lab 8 and beyond. 
 
+
+<!-- Demystifying HTML 
+	are all HTML element types:
+
+		Heading tags (<h1>,<h2>, etc)
+		Paragraph tags (<p>)
+		Bulleted/unordered list tags (<ol>, <ul>)
+		Anchor tags (<a>): these allow you to create outside links
+		Div tags (<div>): these are fluid, invisible containers that can take any shape and characteristic you give it.
+		Notice that, in our index.html file, we have this div: <div id='map'></div>
+		This is a div that has the ID map
+		In our style.css file, we defined map to have the following styling: #map { position: fixed; top: 0; bottom: 0; width: 100%; }
+		This means our map is positioned at 0,0 relative to the viewport on our browser and it takes up 100% of the width of our browser.
+		We also used the map ID to reference that div when we want to add our map into it.
+
+<!
