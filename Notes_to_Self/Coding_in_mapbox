@@ -1,1 +1,184 @@
+<!-- Indicate that you have an html document
+
+	`<!-- This is to indicate we have an HTML document -->
+		<!DOCTYPE html>
+
+	<!-- All our code goes within this tag-->
+		<html>
+
+<!-- here is a default head, all I know is that I need it to get started with mapping in Mapbox
+
+	<!-- All the metadata and packages/tools we'll use go in here-->
+		<head>
+
+	<!-- The charset attribute specifies the character encoding for the HTML document.-->
+		<meta charset="utf-8" />
+
+	<!-- The title of your page, which will appear in the browser tab -->
+		<title>NYC Housing Flood Risk</title>
+
+	<!-- The size of the viewport vs the rendered page -->
+		<meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+			<!-- NOTE: this is editable if I want the viewport to look different
+
+	<!-- We are going to call the Mapbox GL javascript library, which will allow us to use its functionality -->
+		<script src='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.js'></script>
+			<!-- Keep This! 
+
+	<!-- Alongside this, we are going to bring in the Mapbox GL stylesheet -->
+		<link href='https://api.mapbox.com/mapbox-gl-js/v2.9.2/mapbox-gl.css' rel='stylesheet' />
+
+		<link href='style.css' rel='stylesheet' />
+			
+			<!-- I NEED to have a separate style.css, this is crucial to the rendering of my page. Also note that this is CASE SENSITIVE, it will only accept style.css if my file is also called style.css and not Style.css. See code in the indented text below: 
+			
+				body {
+				  margin: 0;
+				  padding: 0;
+				}
+
+				#map {
+				  position: fixed;
+				  top: 0;
+				  bottom: 0;
+				  width: 100%; }
+
+				.map-overlay {
+				  font-family: 'Montserrat', sans-serif;
+				  position: fixed;
+				  width: 30%;
+				  top: 0;
+				  left: 0;
+				  background-color: #fff;
+				  border-radius: 3px;
+				  margin: 10px;
+				}
+		
+				.map-overlay-inner {
+				  padding: 30px;
+				  margin-bottom: 10px;
+				}
+
+				.map-overlay h2 {
+				line-height: 24px;
+				display: block;
+				margin: 0 0 10px;
+				}
+
+				.mapboxgl-popup {
+				max-width: 400px;
+				font: 12px/20px 'Montserrat Neue',sans-serif;
+				}
+
+	<!-- This allows us to bring in new fonts -->
+		<link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+		</head>
+
+<!-- The body contains the actual content of a page -->
+	<body>
+
+	<!-- This is how I add a Paragraph
+
+ 	<p>In the fall of 2012, New York City was hit with hurricane that left tens of thousands of public housing residents <a href = "https://www1.nyc.gov/site/nycha/about/press/pr-2012/nycha-has-restored-power-to-buildings-affected-by-hurricane-sandy.page">without power for days or even weeks</a>. New York City Housing Authority public housing developments were affected. <a href="https://furmancenter.org/files/publications/SandysEffectsOnHousingInNYC.pdf">24,000 government-subsidized apartments and 40,000 rent-stabilized apartments were also affected</a>.
+  	</p>
+
+	<!-- Now if I want to start working in javascript, which deals with the interactivity of a site, I need to add a division in my code. See below. 
+
+  	</div>
+
+	</div>
+
+<!-- All javascript needs to go in between <script> and </script> 
+
+	<script>
+
+// now that I am in javascript, I use // to make comments instead of <!--, also, keep track of my API key and update it everywhere it is found in my code if I refresh it, we are being cheap here. 
+
+		// Inserting my basemap:
+				mapboxgl.accessToken = 'pk.eyJ1Ijoic2VkcmliZW5uZSIsImEiOiJjbDlmcmpkd3E1NnlnM3VvaWQ2dzJ5MDgwIn0.o5KTq1Ye0xu0R1VREc8vtA';
+  					const map = new mapboxgl.Map({
+    				container: 'map', // container id
+   					style: 'mapbox://styles/sedribenne/cl9bwby3n000314po3nbe0n1z', 
+  					center: [-73.935242, 40.730610], // The convention for coordinates is  typically [long, lat]
+   					zoom: 13,
+    				maxZoom: 22,
+    				minZoom: 12
+  					});
+
+  		// I am unsure of what this is but definitely add it before adding map sources and layers. 
+  		
+  		map.on('load',function(){
+
+    			// Give your layer's source a nickname you'll remember easily.
+
+    	// Insert sources and layers to my hearts desire, always check the validity of sources and keep track of parentheses. 
+
+    		map.addSource('NYCHA_housing',{
+    			'type':'vector',
+    			'url':'mapbox://sedribenne.as4pkhib' //get this from the tilesets
+  				});
+
+  // add a new layer with your polygons, this can be any layer that I have uploaded into my mapbox tilesets, which I can find under Studio>tilesets and scrolling to the bottom, 
+
+  			map.addLayer({
+    			'id':'Public_housing',
+    			'type':'fill',
+    			'source':'NYCHA_housing',
+    			'source-layer':'Map_of_NYCHA_Developments-6r79tn',
+    			'paint':{												
+     			 		'fill-color':'#8f2600',						// this is where I would replace with a function
+      					'fill-opacity': 0.8
+    					}
+ 				})
+
+// if I want to make a choropleth map with the data I have, I will need to add a function under the 'fill color' field. 
+// functions take the form of [expression_name, argument_0, argument_1, ...], thus ["*", ["pi"], ["^", 3, 2]] is pi*(3^2)
+
+// There are two functions that I would like to use to create choropleth maps here the first is 'interpolate,' this creates bins depending on a decided classification scheme.
+	
+	//interpolate
+
+		["interpolate",
+   			interpolation: ["linear"] | ["exponential", base] | ["cubic-bezier", x1, y1, x2, y2],
+    		input: number,
+    		stop_input_1: number, stop_output_1: OutputType,
+    		stop_input_n: number, stop_output_n: OutputType, ...
+		]: OutputType (number, array<number>, or Color)
+
+	// in the case of lab 8, our interpolation looks like this, it colors census blocks on a linear scale according to the attribute AMR5E002, which relates to households in poverty.  
+			
+			['interpolate',
+    			['linear'],
+    			['get','AMR5E002'],
+    			1,'white',
+    			915,'#006125'
+			]
+	//step
+
+		//step allows us to set the bins more clearly, creating thresholds at which the different colors change
+
+			["step",
+    			input: number,
+    			stop_output_0: OutputType,									//OutputType is your attribute
+    			stop_input_1: number, stop_output_1: OutputType,			//number, here, is the edge of your bin
+    			stop_input_n: number, stop_output_n: OutputType, ...
+			]: OutputType
+
+			// this is what is looks like in lab 8, it accomplishes basically the same thing as the interpolation
+
+			['step',
+				['get','AMR5E002'],
+				'#edf8e9',200,'#bae4b3',400,'#74c476',600,'#31a354',800,'#006d2c'
+			]
+
+	// Isn't this so much easier to do in GIS?
+
+// When I want to show only a certain subset of the data, I can use the step function to alter the opacity. In lab 8 I did this like so:
+		[
+        	'step',
+  			['get','AMR5E002'],
+  			0.0,300,0.9,
+			],
+
+	//This function visually eliminates all of the census blocks where the value of attribute 'AMR5E002' is 300 or less by making it transparent
 
