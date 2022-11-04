@@ -5,8 +5,8 @@
     <title>Mapbox Storytelling</title>
     <meta name='viewport' content='initial-scale=1,maximum-scale=1,user-scalable=no' />
     <link rel="icon" type="image/x-icon" href="https://raw.githubusercontent.com/mapbox/assembly/publisher-staging/src/svgs/mapbox.svg">
-    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.js'></script>
-    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.7.0/mapbox-gl.css' rel='stylesheet' />
+    <script src='https://api.tiles.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.js'></script>
+    <link href='https://api.tiles.mapbox.com/mapbox-gl-js/v2.10.0/mapbox-gl.css' rel='stylesheet' />
     <script src="https://unpkg.com/intersection-observer@0.12.0/intersection-observer.js"></script>
     <script src="https://unpkg.com/scrollama"></script>
     <style>
@@ -465,12 +465,13 @@ function updateInsetLayer(bounds) {
     insetMap.getSource('boundsSource').setData(bounds);
 }
 
-
+//QUESTIONS FOR THE FUTURE
+//Creating a storymap is certainly on the docket for our final project. So the challenge that we are looking to solve is: 
+//How can we make different chapters cause different layers to fade in/out? What resource could I use to learn how to make this happen? 
+//Also, how could I allow the map to be more interactive? Such as letting the user toggle on/off layers etc. 
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
-
-
 
 </script>
 
