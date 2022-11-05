@@ -12,11 +12,14 @@ var config = {
     title: 'Flooding in the Future of New York',
     subtitle: "An exploration into the projected impacts of flooding on New York City's public housing",
     byline: 'By Emile Bensedrine, under the guidance of Dr. Wenfei Xu',
-    footer: 'Source: source citations, etc. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
+    footer: 'Sources: https://www.space.com/18280-hurricane-sandy-satellite-photo.html, https://www.cityandstateny.com/opinion/2021/09/nycha-needs-big-money-major-progress/185481/, https://eportfolios.macaulay.cuny.edu/nycha/files/2017/04/red_hook_2.jpg. <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     chapters: [
-        { id: 'chapter1',
+        
+        { 
+            id: 'chapter1',
             alignment: 'center',
             description:'In late October of 2012, Hurricane Sandy made landfall in New York City, causing unprecedented damage to the then underprepared metropolis.',
+            image:'sandy.png',
             location: {
                 center: [-73.99252, 40.65727],
                 zoom: 12.23,
@@ -26,22 +29,35 @@ var config = {
             },
             mapAnimation: 'flyTo',
             rotateAnimation: true,
-                onChapterEnter: [
-                 {
-                     layer: 'futurefloodplains-2050-100yr-6nepei',
-                     opacity: 0,
-                     duration: 600
-                 }
-                 ],
-                onChapterEnter: [
+            onChapterEnter: [
+                 // {
+                 //     layer: 'futurefloodplains-2050-100yr-6nepei',
+                 //     opacity: 0,
+                 //     duration: 600
+                 // }
+                 // ],
                  {
                      layer: 'sandy-inundation-zone-4abxur',
                      opacity: 1,
                      duration: 300
-                 }
-            ],
+                 },
+                    {
+                     layer: 'futurefloodplains-2050-100yr-6nepei',
+                     opacity: 0,
+                     duration: 300
+                 },
+                    {
+                     layer: 'pluto-hous-type-master-featu-7b5u7f',
+                     opacity: 0,
+                     duration: 300
+                 },
+                   {
+                     layer: 'futurefloodplains-2100-100yr-cqwfrw',
+                     opacity: 0,
+                     duration: 300
+                 },
+            ]
         },
-
         {
             id: 'chapter2',
             alignment: 'left',
@@ -60,8 +76,14 @@ var config = {
             mapAnimation: 'easeTo',
             rotateAnimation: true,
             callback: '',
+            onChapterExit: [
+                 {
+                     layer: 'sandy-inundation-zone-4abxur',
+                     opacity: 0,
+                     duration: 600
+                 }
+                 ]
         },
-
         {
             id: 'chapter3',
             alignment: 'left',
@@ -84,9 +106,7 @@ var config = {
                      layer: 'sandy-inundation-zone-4abxur',
                      opacity: 1,
                      duration: 5000
-                 }
-            ],            
-            onChapterEnter: [
+                 },
                  {
                      layer: 'pluto-hous-type-master-featu-7b5u7f',
                      opacity: 1,
@@ -115,25 +135,22 @@ var config = {
             onChapterEnter: [
                  {
                      layer: 'pluto-hous-type-master-featu-7b5u7f',
-                     opacity: 1,
+                     opacity: .7,
                      duration: 600
-                 }
-            ],
-            onChapterEnter: [
+                 },
                  {
                      layer: 'sandy-inundation-zone-4abxur',
-                     opacity: .5,
+                     opacity: .7,
                      duration: 600
-                 }
+                 },
             ],
-        
             onChapterExit: [
                  {
                      layer: 'sandy-inundation-zone-4abxur',
                      opacity: 0,
                      duration: 600
-                 }
-            ],
+                 },
+                 ]
         },
         {
             id: 'chapter4',
@@ -154,17 +171,10 @@ var config = {
                 
                 onChapterEnter: [
                  {
-                     layer: 'pluto-hous-type-master-featu-7b5u7f',
-                     opacity: .5,
-                     duration: 300
-                 }
-                ],
-                onChapterEnter: [
-                 {
                      layer: 'futurefloodplains-2050-100yr-6nepei',
-                     opacity: 1,
+                     opacity: .8,
                      duration: 600
-                 }
+                 },
                  ],
                 onChapterExit: [
                  {
@@ -192,7 +202,7 @@ var config = {
                 onChapterEnter: [
                  {
                      layer: 'futurefloodplains-2100-100yr-cqwfrw',
-                     opacity: 1,
+                     opacity: .7,
                      duration: 600
                  }
                 ],
@@ -203,6 +213,8 @@ var config = {
             alignment: 'center',
             hidden: false,
             title: 'Looking Forward',
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
             description: 'The flood resiliency of NYCHA housing developments such as the Red Hook Houses, thus, will be of increasing concern especially as the public housing maintenance backlog continues.',
             location: {
                 center: [-74.00595, 40.67524],
