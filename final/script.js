@@ -1,4 +1,3 @@
-
 var initLoad = true;
 var layerTypes = {
     'fill': ['fill-opacity'],
@@ -351,4 +350,6 @@ function updateInsetLayer(bounds) {
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
+
+
 
