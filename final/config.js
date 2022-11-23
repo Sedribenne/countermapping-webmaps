@@ -1,7 +1,7 @@
 var config = {
     style:  'mapbox://styles/sedribenne/clatxlbpt000m15mimnssxe9x',
     accessToken: 'pk.eyJ1Ijoic2VkcmliZW5uZSIsImEiOiJjbGFzeW5kOGwwNjEzM3dxazlucGNzdGhrIn0.x15FaKNAW1i0COlqNGaG1Q',
-    showMarkers: true,
+    showMarkers: false,
     markerColor: '#3FB1CE',
     //projection: 'equirectangular',
     //Read more about available projections here
