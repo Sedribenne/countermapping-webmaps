@@ -40,7 +40,7 @@ a, a:hover, a:visited {
     height: 180vh;
     position: relative;
     z-index: 5;
-    background-image: url("Images/Sandy_1.png");
+    background-image: url("Images/New Square.png");
 		background-position: top;
 		background-repeat: no-repeat;
 		background-size: 100vw 100vh;
@@ -139,7 +139,7 @@ a, a:hover, a:visited {
     }
 }
 
-#interlude {
+/*#interlude {
 	width: 100vw;
 }
 #interlude p{
@@ -148,7 +148,7 @@ a, a:hover, a:visited {
     margin-left: 32vw;
     margin-right: 32vw;
     background-color: : white;
-}
+}*/
 video {
     margin-left: 43vw;
     width:32%;
