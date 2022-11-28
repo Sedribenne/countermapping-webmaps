@@ -3,7 +3,7 @@
 body {
     margin:0;
     padding:0;
-    font-family: 'Montserrat', sans-serif;
+    font-family: 'Noto Serif', serif;
 }
 a, a:hover, a:visited {
     color: #0071bc;
@@ -49,26 +49,38 @@ a, a:hover, a:visited {
 	margin: 0;
 	padding: 2vh 2vw;
 	text-align: center;
-	font-size: 7vh;
+	font-size: 9vh;
 	color: white;
 	padding-top: 30vh;
+	padding-bottom: 23vh;
 }
 
 #header h2 {
 	margin: 0;
 	padding: 2vh 2vw;
 	text-align: center;
+	font-size: 4vh;
+	color: white;
+	padding-top: 13vh;
+	padding-bottom: 5vh;
+}
+
+#header h3 {
+	margin: 0;
+	padding: 2vh 2vw;
+	text-align: center;
 	font-size: 3vh;
 	color: white;
-	padding-top: 10vh;
-	padding-bottom: 40vh;
+	padding-top: 2vh;
+	padding-bottom: 5vh;
 }
+
 #header p {
-	padding-top: 10vh;
-	font-size: 1.8vh;
+	padding-top: 6vh;
+	font-size: 2.4vh;
     text-align: justify;
-    margin-left: 34vw;
-    margin-right: 34vw;
+    margin-left: 30vw;
+    margin-right: 30vw;
     color: black;
 }
 #footer {
@@ -125,7 +137,7 @@ a, a:hover, a:visited {
 .step div {
     padding:  25px 50px;
     line-height: 25px;
-    font-size: 13px;
+    font-size: 15px;
 }
 
 .step img {
@@ -139,16 +151,18 @@ a, a:hover, a:visited {
     }
 }
 
-/*#interlude {
+#interlude {
 	width: 100vw;
+	height: 20vw;
 }
 #interlude p{
-    font-size: 1.2vh;
-    text-align: justify;
-    margin-left: 32vw;
-    margin-right: 32vw;
+    font-size: 9 vh;
+    text-align: center;
+    color: black;
+    margin-left: 19vw;
+    margin-right: 19vw;
     background-color: : white;
-}*/
+}
 video {
     margin-left: 43vw;
     width:32%;
