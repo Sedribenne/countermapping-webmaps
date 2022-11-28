@@ -52,11 +52,17 @@ if (config.subtitle) {
     header.appendChild(subtitleText);
 }
 
-if (config.byline) {
-    var bylineText = document.createElement('p');
-    bylineText.innerText = config.byline;
-    header.appendChild(bylineText);
+if (config.authors) {
+    var authorsText = document.createElement('h3');
+    authorsText.innerText = config.authors;
+    header.appendChild(authorsText);
 }
+
+// if (config.byline) {
+//     var bylineText = document.createElement('p');
+//     bylineText.innerText = config.byline;
+//     header.appendChild(bylineText);
+// }
 
 		if (config.para1) {
 		    var bylineText = document.createElement('p');
