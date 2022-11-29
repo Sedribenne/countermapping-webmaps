@@ -35,6 +35,26 @@ var config = {
             speed: .1, // make the flying slow
                         onChapterEnter: [
                 {
+                    layer: '2017_county_exec',
+                    opacity: 0
+                },
+                {
+                    layer: '2013_county_exec',
+                    opacity: 0
+                },
+                {
+                    layer: 'secular-schools-0xehn8',
+                    opacity: 0
+                },    
+                {
+                    layer: 'all-schools-b8rve0',
+                    opacity: 0
+                },  
+                {
+                    layer: 'jewish-schools-4p0sa8',
+                    opacity: 0
+                },             
+                {
                     layer: '1960-race-637khu',
                     opacity: 0
                 },
