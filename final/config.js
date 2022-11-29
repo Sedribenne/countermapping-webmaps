@@ -59,6 +59,30 @@ var config = {
                     opacity: 0
                 },
                 {
+                    layer: '1970-race-dm6sg6',
+                    opacity: 0
+                },
+                {
+                    layer: '1980-race-09ndgz',
+                    opacity: 0
+                },
+                {
+                    layer: '1990-race-940279',
+                    opacity: 0
+                },
+                {
+                    layer: '2000-race-ar1826',
+                    opacity: 0
+                }, 
+                {
+                    layer: '2010-race-36y0ds',
+                    opacity: 0
+                },
+                {
+                    layer: '2020-race-5w5o94',
+                    opacity: 0
+                },              
+                {
                     layer: 'New Square 61',
                     opacity: 0
                 },
@@ -105,17 +129,11 @@ var config = {
             ],
 
         },
-            {
-		    id: 'interlude',
-		    alignment: 'center',
-		    hidden: false,
-		    description: '"There are two reasons villages get formed in Rockland, One is to keep the Hasidim out and the other is to keep the Hasidim in."',
-		    location: {
-                center: [-73.99420, 41.12572],
-				zoom: 10.20,
-				pitch: 0.00,
-				bearing: 0.00
-		    }
+        {
+	    id: 'interlude',
+	    alignment: 'center',
+	    hidden: false,
+	    description: '"There are two reasons villages get formed in Rockland, One is to keep the Hasidim out and the other is to keep the Hasidim in."',
 		},
         {
             id: 'chapter60s',
