@@ -24,7 +24,7 @@ var config = {
             title: 'Geography',
             description:'Rockland county lies at the southern end on the west bank of the Hudson River Valley. Throughout the mid-to-late 20th century, the county became increasingly suburbanized with the influx of white city residents moving to the area.',
             location: {
-			center: [-73.92340, 41.10497],
+			center: [-73.95988, 41.16000],
 			zoom: 7.5,
 			pitch: 0.00,
 			bearing: 0.00
@@ -34,98 +34,98 @@ var config = {
             callback: '',
             speed: .1, // make the flying slow
                         onChapterEnter: [
-                {
-                    layer: '2017_county_exec',
-                    opacity: 0
-                },
-                {
-                    layer: '2013_county_exec',
-                    opacity: 0
-                },
-                {
-                    layer: 'secular-schools-0xehn8',
-                    opacity: 0
-                },    
-                {
-                    layer: 'all-schools-b8rve0',
-                    opacity: 0
-                },  
-                {
-                    layer: 'jewish-schools-4p0sa8',
-                    opacity: 0
-                },             
-                {
-                    layer: '1960-race-637khu',
-                    opacity: 0
-                },
-                {
-                    layer: '1970-race-dm6sg6',
-                    opacity: 0
-                },
-                {
-                    layer: '1980-race-09ndgz',
-                    opacity: 0
-                },
-                {
-                    layer: '1990-race-940279',
-                    opacity: 0
-                },
-                {
-                    layer: '2000-race-ar1826',
-                    opacity: 0
-                }, 
-                {
-                    layer: '2010-race-36y0ds',
-                    opacity: 0
-                },
-                {
-                    layer: '2020-race-5w5o94',
-                    opacity: 0
-                },              
-                {
-                    layer: 'New Square 61',
-                    opacity: 0
-                },
-                {
-                    layer: 'Pomona 1967',
-                    opacity: 0
-                },
-                {
-                    layer: 'map-labels-60s',
-                    opacity: 0
-                },
-                {
-                    layer: 'map-labels (1)',
-                    opacity: 0
-                },                
-                {
-                    layer: 'map-labels-90s',
-                    opacity: 0
-                },                               
-                {
-                    layer: 'Wesley Hills 83',
-                    opacity: 0
-                },
-                {
-                    layer: 'New Hempstead 84',
-                    opacity: 0
-                },
-                {
-                    layer: 'Chestnut Ridge 86',
-                    opacity: 0
-                },
-                {
-                    layer: 'Airmont 91',
-                    opacity: 0
-                },
-                {
-                    layer: 'Montebello 86',
-                    opacity: 0
-                },
-                {
-                    layer: 'kaser 91',
-                    opacity: 0
-                },                                                                                                                                  
+                // {
+                //     layer: '2017_county_exec',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: '2013_county_exec',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: 'secular-schools-0xehn8',
+                //     opacity: 0
+                // },    
+                // {
+                //     layer: 'all-schools-b8rve0',
+                //     opacity: 0
+                // },  
+                // {
+                //     layer: 'jewish-schools-4p0sa8',
+                //     opacity: 0
+                // },             
+                // {
+                //     layer: '1960-race-637khu',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: '1970-race-dm6sg6',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: '1980-race-09ndgz',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: '1990-race-940279',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: '2000-race-ar1826',
+                //     opacity: 0
+                // }, 
+                // {
+                //     layer: '2010-race-36y0ds',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: '2020-race-5w5o94',
+                //     opacity: 0
+                // },              
+                // {
+                //     layer: 'New Square 61',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: 'Pomona 1967',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: 'map-labels-60s',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: 'map-labels (1)',
+                //     opacity: 0
+                // },                
+                // {
+                //     layer: 'map-labels-90s',
+                //     opacity: 0
+                // },                               
+                // {
+                //     layer: 'Wesley Hills 83',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: 'New Hempstead 84',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: 'Chestnut Ridge 86',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: 'Airmont 91',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: 'Montebello 86',
+                //     opacity: 0
+                // },
+                // {
+                //     layer: 'kaser 91',
+                //     opacity: 0
+                // },                                                                                                                                  
             ],
 
         },
@@ -164,9 +164,53 @@ var config = {
                     layer: 'Pomona 1967',
                     opacity: 1
                 },
+                                {
+                    layer: '2017_county_exec',
+                    opacity: 0
+                },
+                {
+                    layer: '2013_county_exec',
+                    opacity: 0
+                },
+                {
+                    layer: 'secular-schools-0xehn8',
+                    opacity: 0
+                },    
+                {
+                    layer: 'all-schools-b8rve0',
+                    opacity: 0
+                },  
+                {
+                    layer: 'jewish-schools-4p0sa8',
+                    opacity: 0
+                },             
+                {
+                    layer: '1970-race-dm6sg6',
+                    opacity: 0
+                },
+                {
+                    layer: '1980-race-09ndgz',
+                    opacity: 0
+                },
+                {
+                    layer: '1990-race-940279',
+                    opacity: 0
+                },
+                {
+                    layer: '2000-race-ar1826',
+                    opacity: 0
+                }, 
+                {
+                    layer: '2010-race-36y0ds',
+                    opacity: 0
+                },
+                {
+                    layer: '2020-race-5w5o94',
+                    opacity: 0
+                },              
                 {
                     layer: 'map-labels-60s',
-                    opacity: 1
+                    opacity: 0
                 },
                 {
                     layer: 'map-labels (1)',
@@ -199,7 +243,7 @@ var config = {
                 {
                     layer: 'kaser 91',
                     opacity: 0
-                },                                                                                                                                  
+                },                                                                                                                                 
             ],
             onChapterExit: [
                 {
@@ -442,16 +486,11 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: true,
             callback: '',
-            onChapterEnter: [
-                {
-                    layer: 'housing',
-                    opacity: 0,
-                    duration: 10
-                }],
+            onChapterEnter: [],
             onChapterExit: []
         },
         {
-            id: 'Eastern_europe',
+            id: 'Williamsburg',
             alignment: 'left',
             hidden: false,
             title: 'Origins of the Hasidim',
@@ -468,14 +507,51 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: true,
             callback: '',
-            onChapterEnter: [
-                {
-                    layer: 'housing',
-                    opacity: 0,
-                    duration: 10
-                }],
+            onChapterEnter: [],
             onChapterExit: []
-        }
+        },
+        {
+            id: '',
+            alignment: 'left',
+            hidden: false,
+            title: 'Origins of the Hasidim',
+            description: 'Copy these sections to add to your story.',
+
+            location: {
+                center: [-73.96303, 40.64629],
+                zoom: 11.76,
+                pitch: 44.13,
+                bearing: -16.84,
+              speed: 1, // make the flying slow
+              curve: 1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
+        {
+            id: 'Williamsburg',
+            alignment: 'left',
+            hidden: false,
+            title: 'Origins of the Hasidim',
+            description: 'Copy these sections to add to your story.',
+
+            location: {
+                center: [-73.96303, 40.64629],
+                zoom: 11.76,
+                pitch: 44.13,
+                bearing: -16.84,
+              speed: 1, // make the flying slow
+              curve: 1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
+            onChapterEnter: [],
+            onChapterExit: []
+        },
     ]
 };
 
