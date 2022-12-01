@@ -484,14 +484,14 @@ var config = {
                             layer: '2020-race-5w5o94',
                             opacity: 0
                             },              
-                                // {
-                                // layer: 'New Square 61',
-                                // opacity: 1
-                                // },
-                                //     {
-                                //     layer: 'New Square_label',
-                                //     opacity: 1
-                                //     },
+                                {
+                                layer: 'New Square 61',
+                                opacity: 1
+                                },
+                                    {
+                                    layer: 'New Square_label',
+                                    opacity: 1
+                                    },
                                 {
                                 layer: 'Spring Valley',
                                 opacity: 0
@@ -625,14 +625,14 @@ var config = {
                             layer: '2020-race-5w5o94',
                             opacity: 0
                             },              
-                                // {
-                                // layer: 'New Square 61',
-                                // opacity: 1
-                                // },
-                                //     {
-                                //     layer: 'New Square_label',
-                                //     opacity: 1
-                                //     },
+                                {
+                                layer: 'New Square 61',
+                                opacity: 1
+                                },
+                                    {
+                                    layer: 'New Square_label',
+                                    opacity: 1
+                                    },
                                 {
                                 layer: 'Pomona 1967',
                                 opacity: 0
@@ -876,14 +876,14 @@ var config = {
                             layer: '2020-race-5w5o94',
                             opacity: 0
                             },              
-                                // {
-                                // layer: 'New Square 61',
-                                // opacity: 0
-                                // },
-                                //     {
-                                //     layer: 'New Square_label',
-                                //     opacity: 0
-                                //     },
+                                {
+                                layer: 'New Square 61',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'New Square_label',
+                                    opacity: 0
+                                    },
                                 {
                                 layer: 'Pomona 1967',
                                 opacity: 0
