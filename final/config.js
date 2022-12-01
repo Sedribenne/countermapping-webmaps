@@ -32,101 +32,101 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            speed: .1, // make the flying slow
-                        onChapterEnter: [
-                // {
-                //     layer: '2017_county_exec',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: '2013_county_exec',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: 'secular-schools-0xehn8',
-                //     opacity: 0
-                // },    
-                // {
-                //     layer: 'all-schools-b8rve0',
-                //     opacity: 0
-                // },  
-                // {
-                //     layer: 'jewish-schools-4p0sa8',
-                //     opacity: 0
-                // },             
-                // {
-                //     layer: '1960-race-637khu',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: '1970-race-dm6sg6',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: '1980-race-09ndgz',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: '1990-race-940279',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: '2000-race-ar1826',
-                //     opacity: 0
-                // }, 
-                // {
-                //     layer: '2010-race-36y0ds',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: '2020-race-5w5o94',
-                //     opacity: 0
-                // },              
-                // {
-                //     layer: 'New Square 61',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: 'Pomona 1967',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: 'map-labels-60s',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: 'map-labels (1)',
-                //     opacity: 0
-                // },                
-                // {
-                //     layer: 'map-labels-90s',
-                //     opacity: 0
-                // },                               
-                // {
-                //     layer: 'Wesley Hills 83',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: 'New Hempstead 84',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: 'Chestnut Ridge 86',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: 'Airmont 91',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: 'Montebello 86',
-                //     opacity: 0
-                // },
-                // {
-                //     layer: 'kaser 91',
-                //     opacity: 0
-                // },                                                                                                                                  
-            ],
+            speed: 1, 
+                onChapterEnter: 
+                [                
+                    {
+                    layer: 'rockland-towns-villages-0ka1by',
+                    opacity: 1
+                    }, 
+                                    {
+                    layer: '2017_county_exec',
+                    opacity: 0
+                    },
+                    {
+                    layer: '2013_county_exec',
+                    opacity: 0
+                    },
+                    {
+                    layer: 'secular-schools-0xehn8',
+                    opacity: 0
+                    },    
+                    {
+                    layer: 'all-schools-b8rve0',
+                    opacity: 0
+                    },  
+                    {
+                    layer: 'jewish-schools-4p0sa8',
+                    opacity: 0
+                    },             
+                    {
+                    layer: '1960-race-637khu',
+                    opacity: 0
+                    },
+                    {
+                    layer: '1970-race-dm6sg6',
+                    opacity: 0
+                    },
+                    {
+                    layer: '1980-race-09ndgz',
+                    opacity: 0
+                    },
+                    {
+                    layer: '1990-race-940279',
+                    opacity: 0
+                    },
+                    {
+                    layer: '2000-race-ar1826',
+                    opacity: 0
+                    }, 
+                    {
+                    layer: '2010-race-36y0ds',
+                    opacity: 0
+                    },
+                    {
+                    layer: '2020-race-5w5o94',
+                    opacity: 0
+                    },              
+                    {
+                    layer: 'New Square 61',
+                    opacity: 0
+                    },
+                    {
+                    layer: 'Pomona 1967',
+                    opacity: 0
+                    },
+                    {
+                    layer: 'map-labels-60s',
+                    opacity: 0
+                    },                              
+                    {
+                    layer: 'Wesley Hills 83',
+                    opacity: 0
+                    },
+                    {
+                    layer: 'New Hempstead 84',
+                    opacity: 0
+                    },
+                    {
+                    layer: 'Chestnut Ridge 86',
+                    opacity: 0
+                    },
+                    {
+                    layer: 'Airmont 91',
+                    opacity: 0
+                    },
+                    {
+                    layer: 'Montebello 86',
+                    opacity: 0
+                    },
+                    {
+                    layer: 'kaser 91',
+                    opacity: 0
+                    },                                                  
+                ],
+                onChapterExit: 
+                [                
+                ]
 
         },
         {
@@ -134,7 +134,18 @@ var config = {
 	    alignment: 'center',
 	    hidden: false,
 	    description: '"There are two reasons villages get formed in Rockland, One is to keep the Hasidim out and the other is to keep the Hasidim in."',
-		},
+		onChapterEnter: 
+                [                                                                                                                                 
+                ],
+
+            onChapterExit: 
+                [ 
+                    {
+                    layer: 'rockland-towns-villages-0ka1by',
+                    opacity: 0
+                    },               
+                ]
+        },
         {
             id: 'chapter60s',
             alignment: 'right',
@@ -152,39 +163,7 @@ var config = {
             callback: '',
             speed: .1, // make the flying slow
             onChapterEnter: [
-                {
-                    layer: '1960-race-637khu',
-                    opacity: 1
-                },
-                {
-                    layer: 'New Square 61',
-                    opacity: 1
-                },
-                {
-                    layer: 'Pomona 1967',
-                    opacity: 1
-                },
                                 {
-                    layer: '2017_county_exec',
-                    opacity: 0
-                },
-                {
-                    layer: '2013_county_exec',
-                    opacity: 0
-                },
-                {
-                    layer: 'secular-schools-0xehn8',
-                    opacity: 0
-                },    
-                {
-                    layer: 'all-schools-b8rve0',
-                    opacity: 0
-                },  
-                {
-                    layer: 'jewish-schools-4p0sa8',
-                    opacity: 0
-                },             
-                {
                     layer: '1970-race-dm6sg6',
                     opacity: 0
                 },
@@ -209,18 +188,6 @@ var config = {
                     opacity: 0
                 },              
                 {
-                    layer: 'map-labels-60s',
-                    opacity: 0
-                },
-                {
-                    layer: 'map-labels (1)',
-                    opacity: 0
-                },                
-                {
-                    layer: 'map-labels-90s',
-                    opacity: 0
-                },                               
-                {
                     layer: 'Wesley Hills 83',
                     opacity: 0
                 },
@@ -243,7 +210,41 @@ var config = {
                 {
                     layer: 'kaser 91',
                     opacity: 0
-                },                                                                                                                                 
+                },                 
+                {
+                    layer: '2017_county_exec',
+                    opacity: 0
+                },
+                {
+                    layer: '2013_county_exec',
+                    opacity: 0
+                },
+                {
+                    layer: '1960-race-637khu',
+                    opacity: 1
+                },
+                {
+                    layer: 'New Square 61',
+                    opacity: 1
+                },
+                {
+                    layer: 'Pomona 1967',
+                    opacity: 1
+                },
+
+                // {
+                //     layer: 'secular-schools',
+                //     opacity: 0
+                // },    
+                // {
+                //     layer: 'all-schools',
+                //     opacity: 0
+                // },  
+                // {
+                //     layer: 'jewish-schools',
+                //     opacity: 0
+                // },             
+                                                                                                                                              
             ],
             onChapterExit: [
                 {
@@ -262,10 +263,6 @@ var config = {
                     layer: '1960-race-637khu',
                     opacity: 0
                 },
-                {
-                	layer: '1970-race-dm6sg6',
-                    opacity: 1,
-                },
 
             ]
         },
@@ -283,31 +280,16 @@ var config = {
 				bearing: 0.00
             },
             callback: '',
-            onChapterEnter: [],
+            onChapterEnter: [                
+                {
+                    layer: '1970-race-dm6sg6',
+                    opacity: 1,
+                },
+                ],
             onChapterExit: [                
             	{
                     layer: '1970-race-dm6sg6',
                     opacity: 0
-                },
-                {
-                	layer: '1980-race-09ndgz',
-                    opacity: 1,
-                },               
-                {
-                    layer: 'Wesley Hills 83',
-                    opacity: 1
-                },
-                {
-                    layer: 'New Hempstead 84',
-                    opacity: 1
-                },
-                {
-                    layer: 'Chestnut Ridge 86',
-                    opacity: 1
-                },
-                {
-                    layer: 'Montebello 86',
-                    opacity: 1
                 },
                 ]
         },
@@ -327,21 +309,30 @@ var config = {
             callback: '',
             onChapterEnter: [
                     {
-                 	layer: 'map-labels (1)',
+                    layer: '1980-race-09ndgz',
+                    opacity: 1,
+                    },               
+                    {
+                    layer: 'Wesley Hills 83',
                     opacity: 1
-                }],
+                    },
+                    {
+                    layer: 'New Hempstead 84',
+                    opacity: 1
+                    },
+                    {
+                    layer: 'Chestnut Ridge 86',
+                    opacity: 1
+                    },
+                    {
+                    layer: 'Montebello 86',
+                    opacity: 1
+                    }
+                    ],
             onChapterExit: [            	{
                     layer: '1980-race-09ndgz',
                     opacity: 0
                 },
-                {
-                	layer: '1990-race-940279',
-                    opacity: 1,
-                },
-                                {
-                	layer: '1980-race-09ndgz',
-                    opacity: 0,
-                },               
                 {
                     layer: 'Wesley Hills 83',
                     opacity: 0
@@ -358,22 +349,6 @@ var config = {
                     layer: 'Montebello 86',
                     opacity: 0
                 },
-                {
-                    layer: 'Airmont 91',
-                    opacity: 1
-                },
-                {
-                    layer: 'kaser 91',
-                    opacity: 1
-                },
-                {
-                 	layer: 'map-labels (1)',
-                    opacity: 0
-                },
-                {
-                	layer: 'map-labels-90s',
-                	opacity: 1
-                }
                 ]
         },
         {
@@ -390,15 +365,38 @@ var config = {
 				bearing: 0.00
             },
             callback: '',
-            onChapterEnter: [],
-            onChapterExit: [            	{
+            onChapterEnter: [                
+                {
+                    layer: 'Airmont 91',
+                    opacity: 1
+                },
+                {
+                    layer: 'kaser 91',
+                    opacity: 1
+                },
+                {
+                    layer: '1990-race-940279',
+                    opacity: 1
+                },
+                ],
+            onChapterExit: [            	
+                {
                     layer: '1990-race-940279',
                     opacity: 0
                 },
                 {
                 	layer: '2000-race-ar1826',
                     opacity: 1,
-                },]
+                },
+                {
+                    layer: 'Airmont 91',
+                    opacity: 0
+                },
+                {
+                    layer: 'kaser 91',
+                    opacity: 0
+                },
+                ]
         },
             {
             id: 'chapter00s',
@@ -472,8 +470,8 @@ var config = {
             id: 'Eastern_europe',
             alignment: 'left',
             hidden: false,
-            title: 'Origins of the Hasidim',
-            description: 'Copy these sections to add to your story.',
+            title: 'Origins of Hasidism in Central and Eastern Europe',
+            description: 'Text about what started Hasidism and how it spread, what are the dynastic structures, etc.',
 
             location: {
               	center: [22.87423, 47.76870],
@@ -493,8 +491,8 @@ var config = {
             id: 'Williamsburg',
             alignment: 'left',
             hidden: false,
-            title: 'Origins of the Hasidim',
-            description: 'Copy these sections to add to your story.',
+            title: 'Migration to Brooklyn',
+            description: 'During and after the Second World War, the majority of European Jews who survived migrated to the United States or Mandatory Palestine (now the State of Israel). Many Hasidic dynasties took the journey to the United States, settling mainly in Booklyn.',
 
             location: {
 				center: [-73.96303, 40.64629],
@@ -511,45 +509,156 @@ var config = {
             onChapterExit: []
         },
         {
-            id: '',
-            alignment: 'left',
-            hidden: false,
-            title: 'Origins of the Hasidim',
-            description: 'Copy these sections to add to your story.',
-
-            location: {
-                center: [-73.96303, 40.64629],
-                zoom: 11.76,
-                pitch: 44.13,
-                bearing: -16.84,
-              speed: 1, // make the flying slow
-              curve: 1, // change the speed at which it zooms out
-            },
-            mapAnimation: 'flyTo',
-            rotateAnimation: true,
-            callback: '',
-            onChapterEnter: [],
-            onChapterExit: []
+        id: 'interlude',
+        alignment: 'center',
+        hidden: false,
+        description: "Hasidic Rebbes, who lead Hasidic communities quickly realized that New York City was unfit for a pure religious life. They quickly looked to nearby rapidly suburbanizing rural areas for places to live an unbothered religious life. New Square being the first of these places in Rockland County. Hasidim quickly began to move north to Rockland and founded Yeshivas—religious schools children attend until they marry."
         },
         {
-            id: 'Williamsburg',
+            id: 'All Schools',
             alignment: 'left',
             hidden: false,
-            title: 'Origins of the Hasidim',
+            title: 'All Schools in Rockland',
             description: 'Copy these sections to add to your story.',
 
             location: {
-                center: [-73.96303, 40.64629],
-                zoom: 11.76,
-                pitch: 44.13,
-                bearing: -16.84,
+                center: [-73.95988, 41.16000],
+                zoom: 10.3,
+                pitch: 0.00,
+                bearing: 0.00,
               speed: 1, // make the flying slow
               curve: 1, // change the speed at which it zooms out
             },
             mapAnimation: 'flyTo',
-            rotateAnimation: true,
+            rotateAnimation: false,
             callback: '',
-            onChapterEnter: [],
+            onChapterEnter: [
+                {
+                    layer: 'all-schools-b8rve0',
+                    opacity: 1
+                },],
+            onChapterExit: [
+                {
+                    layer: 'all-schools-b8rve0',
+                    opacity: 0
+                },],
+        },
+        {
+            id: 'Jewish Schools',
+            alignment: 'left',
+            hidden: false,
+            title: 'Jewish Schools in Rockland',
+            description: 'Copy these sections to add to your story.',
+
+            location: {
+                center: [-73.95988, 41.16000],
+                zoom: 10.3,
+                pitch: 0.00,
+                bearing: 0.00,
+              speed: 1, // make the flying slow
+              curve: 1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'jewish-schools-4p0sa8',
+                    opacity: 1
+                },],
+            onChapterExit: [
+                {
+                    layer: 'jewish-schools-4p0sa8',
+                    opacity: 0
+                },],
+        },
+        {
+            id: 'Secular Schools',
+            alignment: 'left',
+            hidden: false,
+            title: 'Secular Schools in Rockland',
+            description: 'Copy these sections to add to your story.',
+
+            location: {
+                center: [-73.95988, 41.16000],
+                zoom: 10.3,
+                pitch: 0.00,
+                bearing: 0.00,
+              speed: 1, // make the flying slow
+              curve: 1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: 'secular-schools-0xehn8',
+                    opacity: 1
+                },],
+            onChapterExit: [
+                {
+                    layer: 'secular-schools-0xehn8',
+                    opacity: 0
+                },],
+        },
+        {
+        id: 'interlude',
+        alignment: 'center',
+        hidden: false,
+        description: 'Text introducing elections section',
+        },
+        {
+            id: 'Election_2013',
+            alignment: 'left',
+            hidden: false,
+            title: 'County Executive Race of 2013',
+            description: 'Copy these sections to add to your story.',
+
+            location: {
+                center: [-73.95988, 41.16000],
+                zoom: 10.3,
+                pitch: 0.00,
+                bearing: 0.00,
+              speed: 1, // make the flying slow
+              curve: 1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+                {
+                    layer: '2013_county_exec',
+                    opacity: 1
+                },],
+            onChapterExit: [
+                {
+                    layer: '2013_county_exec',
+                    opacity: 0
+                },],
+        },
+        {
+            id: 'Election_2017',
+            alignment: 'left',
+            hidden: false,
+            title: 'County Executive Race of 2017',
+            description: 'Copy these sections to add to your story.',
+
+            location: {
+                center: [-73.95988, 41.16000],
+                zoom: 10.3,
+                pitch: 0.00,
+                bearing: 0.00,
+              speed: 1, // make the flying slow
+              curve: 1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            onChapterEnter: [
+            {
+                    layer: '2017_county_exec',
+                    opacity: 1
+                },],
             onChapterExit: []
         },
     ]
