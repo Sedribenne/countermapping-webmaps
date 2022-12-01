@@ -58,23 +58,23 @@ if (config.authors) {
     header.appendChild(authorsText);
 }
 
-// if (config.byline) {
-//     var bylineText = document.createElement('p');
-//     bylineText.innerText = config.byline;
-//     header.appendChild(bylineText);
-// }
+if (config.byline) {
+    var bylineText = document.createElement('p');
+    bylineText.innerText = config.byline;
+    header.appendChild(bylineText);
+}
 
-		if (config.para1) {
-		    var bylineText = document.createElement('p');
-		    bylineText.innerText = config.para1;
-		    header.appendChild(bylineText);
-		}
+        if (config.para1) {
+            var bylineText = document.createElement('p');
+            bylineText.innerText = config.para1;
+            header.appendChild(bylineText);
+        }
 
-		if (config.para2) {
-		    var bylineText = document.createElement('p');
-		    bylineText.innerText = config.para2;
-		    header.appendChild(bylineText);
-		}
+        if (config.para2) {
+            var bylineText = document.createElement('p');
+            bylineText.innerText = config.para2;
+            header.appendChild(bylineText);
+        }
 
 if (header.innerText.length > 0) {
     header.classList.add(config.theme);
@@ -103,17 +103,17 @@ config.chapters.forEach((record, idx) => {
         story.innerHTML = record.description;
         chapter.appendChild(story);
     }
-	if (record.video) {
-	    var videoDiv = document.createElement('div');
-	    videoDiv.setAttribute('class', 'videoContainer');
-	    video =  document.createElement('video');
-	    video.controls=true;
-	    video.autoplay=true;
-	    video.loop=true;
-	    video.src = record.video;
-	    videoDiv.appendChild(video)
-	    chapter.appendChild(videoDiv);
-	}
+    if (record.video) {
+        var videoDiv = document.createElement('div');
+        videoDiv.setAttribute('class', 'videoContainer');
+        video =  document.createElement('video');
+        video.controls=true;
+        video.autoplay=true;
+        video.loop=true;
+        video.src = record.video;
+        videoDiv.appendChild(video)
+        chapter.appendChild(videoDiv);
+    }
     container.setAttribute('id', record.id);
     container.classList.add('step');
     if (idx === 0) {
@@ -356,6 +356,4 @@ function updateInsetLayer(bounds) {
 
 // setup resize event
 window.addEventListener('resize', scroller.resize);
-
-
 
