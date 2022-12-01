@@ -1311,6 +1311,7 @@ var config = {
                                     } 
                 ]
         },
+        
             {
             id: 'chapter00s',
             alignment: 'right',
