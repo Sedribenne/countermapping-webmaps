@@ -18,6 +18,131 @@ var config = {
     
     chapters: [        
     	{
+        id: 'interlude1',
+        alignment: 'center',
+        hidden: false,
+        description: "«So my dad graduated from Ramapo in 1978. He's been here since he was in like four or five. My mom moved here, probably closer to the 90s, when my sisters were born. But yeah, so all the people in my household went through East Ramapo at some point. My niece is actually at Hempstead Elementary School now she's a fifth grader. So like the whole family has been through that system, almost entirely.Nathan Powell, a graduate urbanism student at Concordia University, spent his entire childhood in East Ramapo Schools. So did his sister, Ashley Leveille, who is now a member of the district’s school board. Throughout his upbringing in East Ramapo Schools, Nathan noticed his educational environment changing around him. I started out in East Ramapo in kindergarten, and then I went to Hempstead. Hempstead at that point was a K-e school. And then for grades four to six, you have to go to Colton. And by the time I got to third grade, Colton was sold to the Hasidim. So they made Hempstead from K-3 to K-6, which was like a big change. We used to have like maybe four to five classes per grade that turned into basically two main classes each grade [due to] space concerns. As a result of Colton’s closing, a lot of people got sent to either Lime Kiln or at that time, Hillcrest, which got closed and sold to the Hasidim and replaced by Kakiat Elementary School. What they used to do is send the freshmen to a separate building called the Freshman Center to get them used to high school before they went to Ramapo High School and then Ramapo was 10-12, which allowed them to have more space to do more things. That [freshman center program] also was stopped because they had to reconfigure the school district after they sold another school to the Hasidim. So then the Freshman Center became Kakiat which is now the Kakiat STEAM Academy, which deals with the overflow from what used to be Hempstead and Colton. And then [now] Ramapo is just a high school from 9th grade to 12th grade.»",
+        // onChapterEnter: 
+        //         [    
+        //             {
+        //             layer: 'rockland-towns-villages-0ka1by',
+        //             opacity: 1
+        //             }, 
+        //                     {
+        //                     layer: '2017_county_exec',
+        //                     opacity: 0
+        //                     },
+        //                     {
+        //                     layer: '2013_county_exec',
+        //                     opacity: 0
+        //                     },
+        //                         {
+        //                         layer: 'secular-schools',
+        //                         opacity: 0
+        //                         },    
+        //                         {
+        //                         layer: 'all-schools',
+        //                         opacity: 0
+        //                         },  
+        //                         {
+        //                         layer: 'jewish-schools',
+        //                         opacity: 0
+        //                         },             
+        //                     {
+        //                     layer: '1960-race-637khu',
+        //                     opacity: 0
+        //                     },
+        //                     {
+        //                     layer: '1970-race-dm6sg6',
+        //                     opacity: 0
+        //                     },
+        //                     {
+        //                     layer: '1980-race-09ndgz',
+        //                     opacity: 0
+        //                     },
+        //                     {
+        //                     layer: '1990-race-940279',
+        //                     opacity: 0
+        //                     },
+        //                     {
+        //                     layer: '2000-race-ar1826',
+        //                     opacity: 0
+        //                     }, 
+        //                     {
+        //                     layer: '2010-race-36y0ds',
+        //                     opacity: 0
+        //                     },
+        //                     {
+        //                     layer: '2020-race-5w5o94',
+        //                     opacity: 0
+        //                     },              
+        //                         {
+        //                         layer: 'New Square 61',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'New Square_label',
+        //                             opacity: 0
+        //                             },
+        //                         {
+        //                         layer: 'Pomona 1967',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'Pomona_label',
+        //                             opacity: 0
+        //                             },                              
+        //                         {
+        //                         layer: 'Wesley Hills 83',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'Wesley Hills_label',
+        //                             opacity: 0
+        //                             },
+        //                         {
+        //                         layer: 'New Hempstead 84',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'New Hempstead_label',
+        //                             opacity: 0
+        //                             },
+        //                         {
+        //                         layer: 'Chestnut Ridge 86',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'Chestnut Ridge_label',
+        //                             opacity: 0
+        //                             },
+        //                         {
+        //                         layer: 'Airmont 91',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'Airmont_label',
+        //                             opacity: 0
+        //                             },
+        //                         {
+        //                         layer: 'Montebello 86',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'Montebello_label',
+        //                             opacity: 0
+        //                             },
+        //                         {
+        //                         layer: 'kaser 91',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'kaser_label',
+        //                             opacity: 0
+        //                             }                                                                                                                               
+        //         ],
+            },
+        {
             id: 'first_chapter',
             alignment: 'right',
             hidden: false,
@@ -32,7 +157,7 @@ var config = {
             mapAnimation: 'flyTo',
             rotateAnimation: false,
             callback: '',
-            audio: 'on',
+            audio: 'off',
             speed: 1, 
             onChapterEnter: 
                 [                
@@ -964,9 +1089,11 @@ var config = {
         },
         {
         id: 'interlude',
-        alignment: 'center',
+        alignment: 'concentrated',
         hidden: false,
         description: '«So when I started in East Ramapo [in the early 2000s], I would say like 50% of each classroom had Haitian children. Now, one or two, one or two. That is just how many of their Haitian families have just moved out of the district»',
+        audio: 'Audio Files/Jennifer Wilmoth.mp3',
+        audioOn: 'yes',
         onChapterEnter: [                                                                                                                                 
                 ],
             onChapterExit: [              
@@ -1372,7 +1499,14 @@ var config = {
                     layer: 'secular-schools',
                     opacity: 0
                 },
-
+                {
+                    layer: '2013_county_exec',
+                    opacity: 0
+                },
+                {
+                    layer: '2017_county_exec',
+                    opacity: 0
+                },
                 ],
         },
         {
@@ -1406,6 +1540,15 @@ var config = {
                     layer: 'secular-schools',
                     opacity: 1
                 },
+                                {
+                    layer: '2013_county_exec',
+                    opacity: 0
+                },
+                {
+                    layer: '2017_county_exec',
+                    opacity: 0
+                },
+
                 ],
         },
         {
