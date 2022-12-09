@@ -158,10 +158,137 @@ var config = {
                                     {
                                     layer: 'kaser_label',
                                     opacity: 0
-                                    }                                                   
-                ],
-                onChapterExit: 
-                [ 
+                                    },   
+                                    ]
+                                },                                                
+                // ],
+                // onChapterExit: 
+                // [ 
+                //     {
+                //     layer: 'rockland-towns-villages-0ka1by',
+                //     opacity: 1
+                //     }, 
+                //             {
+                //             layer: '2017_county_exec',
+                //             opacity: 0
+                //             },
+                //             {
+                //             layer: '2013_county_exec',
+                //             opacity: 0
+                //             },
+                //                 {
+                //                 layer: 'secular-schools',
+                //                 opacity: 0
+                //                 },    
+                //                 {
+                //                 layer: 'all-schools',
+                //                 opacity: 0
+                //                 },  
+                //                 {
+                //                 layer: 'jewish-schools',
+                //                 opacity: 0
+                //                 },             
+                //             {
+                //             layer: '1960-race-637khu',
+                //             opacity: 0
+                //             },
+                //             {
+                //             layer: '1970-race-dm6sg6',
+                //             opacity: 0
+                //             },
+                //             {
+                //             layer: '1980-race-09ndgz',
+                //             opacity: 0
+                //             },
+                //             {
+                //             layer: '1990-race-940279',
+                //             opacity: 0
+                //             },
+                //             {
+                //             layer: '2000-race-ar1826',
+                //             opacity: 0
+                //             }, 
+                //             {
+                //             layer: '2010-race-36y0ds',
+                //             opacity: 0
+                //             },
+                //             {
+                //             layer: '2020-race-5w5o94',
+                //             opacity: 0
+                //             },              
+                //                 {
+                //                 layer: 'New Square 61',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'New Square_label',
+                //                     opacity: 0
+                //                     },
+                //                 {
+                //                 layer: 'Pomona 1967',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'Pomona_label',
+                //                     opacity: 0
+                //                     },                              
+                //                 {
+                //                 layer: 'Wesley Hills 83',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'Wesley Hills_label',
+                //                     opacity: 0
+                //                     },
+                //                 {
+                //                 layer: 'New Hempstead 84',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'New Hempstead_label',
+                //                     opacity: 0
+                //                     },
+                //                 {
+                //                 layer: 'Chestnut Ridge 86',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'Chestnut Ridge_label',
+                //                     opacity: 0
+                //                     },
+                //                 {
+                //                 layer: 'Airmont 91',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'Airmont_label',
+                //                     opacity: 0
+                //                     },
+                //                 {
+                //                 layer: 'Montebello 86',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'Montebello_label',
+                //                     opacity: 0
+                //                     },
+                //                 {
+                //                 layer: 'kaser 91',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'kaser_label',
+                //                     opacity: 0
+                //                     }               
+                // ]
+        
+        {
+	    id: 'interlude',
+	    alignment: 'center',
+	    hidden: false,
+	    description: '«There are two reasons villages get formed in Rockland, One is to keep the Hasidim out and the other is to keep the Hasidim in.» -Paul Alder, Rockland County Council on Jewish Relations ',
+		onChapterEnter: 
+                [    
                     {
                     layer: 'rockland-towns-villages-0ka1by',
                     opacity: 1
@@ -277,25 +404,128 @@ var config = {
                                     {
                                     layer: 'kaser_label',
                                     opacity: 0
-                                    }               
-                ]
-        },
-        {
-	    id: 'interlude',
-	    alignment: 'center',
-	    hidden: false,
-	    description: '«There are two reasons villages get formed in Rockland, One is to keep the Hasidim out and the other is to keep the Hasidim in.» -Paul Alder, Rockland County Council on Jewish Relations ',
-		onChapterEnter: 
-                [                                                                                                                                 
+                                    }                                                                                                                               
                 ],
 
-            onChapterExit: 
-                [ 
-                    {
-                    layer: 'rockland-towns-villages-0ka1by',
-                    opacity: 0
-                    },               
-                ]
+            // onChapterExit: 
+                // [ 
+                //     {
+                //     layer: 'rockland-towns-villages-0ka1by',
+                //     opacity: 0
+                //     }, 
+                //             {
+                //             layer: '2017_county_exec',
+                //             opacity: 0
+                //             },
+                //             {
+                //             layer: '2013_county_exec',
+                //             opacity: 0
+                //             },
+                //                 {
+                //                 layer: 'secular-schools',
+                //                 opacity: 0
+                //                 },    
+                //                 {
+                //                 layer: 'all-schools',
+                //                 opacity: 0
+                //                 },  
+                //                 {
+                //                 layer: 'jewish-schools',
+                //                 opacity: 0
+                //                 },             
+                //             {
+                //             layer: '1960-race-637khu',
+                //             opacity: 0
+                //             },
+                //             {
+                //             layer: '1970-race-dm6sg6',
+                //             opacity: 0
+                //             },
+                //             {
+                //             layer: '1980-race-09ndgz',
+                //             opacity: 0
+                //             },
+                //             {
+                //             layer: '1990-race-940279',
+                //             opacity: 0
+                //             },
+                //             {
+                //             layer: '2000-race-ar1826',
+                //             opacity: 0
+                //             }, 
+                //             {
+                //             layer: '2010-race-36y0ds',
+                //             opacity: 0
+                //             },
+                //             {
+                //             layer: '2020-race-5w5o94',
+                //             opacity: 0
+                //             },              
+                //                 {
+                //                 layer: 'New Square 61',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'New Square_label',
+                //                     opacity: 0
+                //                     },
+                //                 {
+                //                 layer: 'Pomona 1967',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'Pomona_label',
+                //                     opacity: 0
+                //                     },                              
+                //                 {
+                //                 layer: 'Wesley Hills 83',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'Wesley Hills_label',
+                //                     opacity: 0
+                //                     },
+                //                 {
+                //                 layer: 'New Hempstead 84',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'New Hempstead_label',
+                //                     opacity: 0
+                //                     },
+                //                 {
+                //                 layer: 'Chestnut Ridge 86',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'Chestnut Ridge_label',
+                //                     opacity: 0
+                //                     },
+                //                 {
+                //                 layer: 'Airmont 91',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'Airmont_label',
+                //                     opacity: 0
+                //                     },
+                //                 {
+                //                 layer: 'Montebello 86',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'Montebello_label',
+                //                     opacity: 0
+                //                     },
+                //                 {
+                //                 layer: 'kaser 91',
+                //                 opacity: 0
+                //                 },
+                //                     {
+                //                     layer: 'kaser_label',
+                //                     opacity: 0
+                //                     }               
+                // ]
         },
         {
             id: 'chapter60s',
@@ -314,7 +544,7 @@ var config = {
             callback: '',
             speed: .1, // make the flying slow
             onChapterEnter: [
-                                    {
+                    {
                     layer: 'rockland-towns-villages-0ka1by',
                     opacity: 0
                     }, 
@@ -431,132 +661,132 @@ var config = {
                                     opacity: 0
                                     }                                                                                                                                    
             ],
-            onChapterExit: [
-                                {
-                    layer: 'rockland-towns-villages-0ka1by',
-                    opacity: 0
-                    }, 
-                            {
-                            layer: '2017_county_exec',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2013_county_exec',
-                            opacity: 0
-                            },
-                                {
-                                layer: 'secular-schools',
-                                opacity: 0
-                                },    
-                                {
-                                layer: 'all-schools',
-                                opacity: 0
-                                },  
-                                {
-                                layer: 'jewish-schools',
-                                opacity: 0
-                                },             
-                            {
-                            layer: '1960-race-637khu',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1970-race-dm6sg6',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1980-race-09ndgz',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1990-race-940279',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2000-race-ar1826',
-                            opacity: 0
-                            }, 
-                            {
-                            layer: '2010-race-36y0ds',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2020-race-5w5o94',
-                            opacity: 0
-                            },              
-                                {
-                                layer: 'New Square 61',
-                                opacity: 1
-                                },
-                                    {
-                                    layer: 'New Square_label',
-                                    opacity: 1
-                                    },
-                                {
-                                layer: 'Spring Valley',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Spring Valley_Label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Pomona 1967',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Pomona_label',
-                                    opacity: 0
-                                    },                              
-                                {
-                                layer: 'Wesley Hills 83',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Wesley Hills_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'New Hempstead 84',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'New Hempstead_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Chestnut Ridge 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Chestnut Ridge_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Airmont 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Airmont_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Montebello 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Montebello_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'kaser 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'kaser_label',
-                                    opacity: 0
-                                    } 
-            ]
+            // onChapterExit: [
+            //                     {
+            //         layer: 'rockland-towns-villages-0ka1by',
+            //         opacity: 0
+            //         }, 
+            //                 {
+            //                 layer: '2017_county_exec',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2013_county_exec',
+            //                 opacity: 0
+            //                 },
+            //                     {
+            //                     layer: 'secular-schools',
+            //                     opacity: 0
+            //                     },    
+            //                     {
+            //                     layer: 'all-schools',
+            //                     opacity: 0
+            //                     },  
+            //                     {
+            //                     layer: 'jewish-schools',
+            //                     opacity: 0
+            //                     },             
+            //                 {
+            //                 layer: '1960-race-637khu',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1970-race-dm6sg6',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1980-race-09ndgz',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1990-race-940279',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2000-race-ar1826',
+            //                 opacity: 0
+            //                 }, 
+            //                 {
+            //                 layer: '2010-race-36y0ds',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2020-race-5w5o94',
+            //                 opacity: 0
+            //                 },              
+            //                     {
+            //                     layer: 'New Square 61',
+            //                     opacity: 1
+            //                     },
+            //                         {
+            //                         layer: 'New Square_label',
+            //                         opacity: 1
+            //                         },
+            //                     {
+            //                     layer: 'Spring Valley',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Spring Valley_Label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Pomona 1967',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Pomona_label',
+            //                         opacity: 0
+            //                         },                              
+            //                     {
+            //                     layer: 'Wesley Hills 83',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Wesley Hills_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'New Hempstead 84',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'New Hempstead_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Chestnut Ridge 86',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Chestnut Ridge_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Airmont 91',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Airmont_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Montebello 86',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Montebello_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'kaser 91',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'kaser_label',
+            //                         opacity: 0
+            //                         } 
+            // ]
         },
         {
             id: 'chapter70s',
@@ -690,124 +920,124 @@ var config = {
                                     opacity: 0
                                     } 
                 ],
-            onChapterExit: [                
-                    {
-                    layer: 'rockland-towns-villages-0ka1by',
-                    opacity: 0
-                    }, 
-                            {
-                            layer: '2017_county_exec',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2013_county_exec',
-                            opacity: 0
-                            },
-                                {
-                                layer: 'secular-schools',
-                                opacity: 0
-                                },    
-                                {
-                                layer: 'all-schools',
-                                opacity: 0
-                                },  
-                                {
-                                layer: 'jewish-schools',
-                                opacity: 0
-                                },             
-                            {
-                            layer: '1960-race-637khu',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1970-race-dm6sg6',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1980-race-09ndgz',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1990-race-940279',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2000-race-ar1826',
-                            opacity: 0
-                            }, 
-                            {
-                            layer: '2010-race-36y0ds',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2020-race-5w5o94',
-                            opacity: 0
-                            },              
-                                {
-                                layer: 'New Square 61',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'New Square_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Pomona 1967',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Pomona_label',
-                                    opacity: 0
-                                    },                              
-                                {
-                                layer: 'Wesley Hills 83',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Wesley Hills_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'New Hempstead 84',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'New Hempstead_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Chestnut Ridge 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Chestnut Ridge_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Airmont 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Airmont_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Montebello 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Montebello_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'kaser 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'kaser_label',
-                                    opacity: 0
-                                    } 
-                ]
+            // onChapterExit: [                
+            //         {
+            //         layer: 'rockland-towns-villages-0ka1by',
+            //         opacity: 0
+            //         }, 
+            //                 {
+            //                 layer: '2017_county_exec',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2013_county_exec',
+            //                 opacity: 0
+            //                 },
+            //                     {
+            //                     layer: 'secular-schools',
+            //                     opacity: 0
+            //                     },    
+            //                     {
+            //                     layer: 'all-schools',
+            //                     opacity: 0
+            //                     },  
+            //                     {
+            //                     layer: 'jewish-schools',
+            //                     opacity: 0
+            //                     },             
+            //                 {
+            //                 layer: '1960-race-637khu',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1970-race-dm6sg6',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1980-race-09ndgz',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1990-race-940279',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2000-race-ar1826',
+            //                 opacity: 0
+            //                 }, 
+            //                 {
+            //                 layer: '2010-race-36y0ds',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2020-race-5w5o94',
+            //                 opacity: 0
+            //                 },              
+            //                     {
+            //                     layer: 'New Square 61',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'New Square_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Pomona 1967',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Pomona_label',
+            //                         opacity: 0
+            //                         },                              
+            //                     {
+            //                     layer: 'Wesley Hills 83',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Wesley Hills_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'New Hempstead 84',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'New Hempstead_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Chestnut Ridge 86',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Chestnut Ridge_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Airmont 91',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Airmont_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Montebello 86',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Montebello_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'kaser 91',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'kaser_label',
+            //                         opacity: 0
+            //                         } 
+            //     ]
         },
         {
             id: 'chapter80s',
@@ -941,124 +1171,124 @@ var config = {
                                     opacity: 0
                                     } 
                     ],
-            onChapterExit: [                    
-                    {
-                    layer: 'rockland-towns-villages-0ka1by',
-                    opacity: 0
-                    }, 
-                            {
-                            layer: '2017_county_exec',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2013_county_exec',
-                            opacity: 0
-                            },
-                                {
-                                layer: 'secular-schools',
-                                opacity: 0
-                                },    
-                                {
-                                layer: 'all-schools',
-                                opacity: 0
-                                },  
-                                {
-                                layer: 'jewish-schools',
-                                opacity: 0
-                                },             
-                            {
-                            layer: '1960-race-637khu',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1970-race-dm6sg6',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1980-race-09ndgz',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1990-race-940279',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2000-race-ar1826',
-                            opacity: 0
-                            }, 
-                            {
-                            layer: '2010-race-36y0ds',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2020-race-5w5o94',
-                            opacity: 0
-                            },              
-                                {
-                                layer: 'New Square 61',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'New Square_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Pomona 1967',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Pomona_label',
-                                    opacity: 0
-                                    },                              
-                                {
-                                layer: 'Wesley Hills 83',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Wesley Hills_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'New Hempstead 84',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'New Hempstead_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Chestnut Ridge 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Chestnut Ridge_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Airmont 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Airmont_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Montebello 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Montebello_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'kaser 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'kaser_label',
-                                    opacity: 0
-                                    } 
-                                ]
+            // onChapterExit: [                    
+            //         {
+            //         layer: 'rockland-towns-villages-0ka1by',
+            //         opacity: 0
+            //         }, 
+            //                 {
+            //                 layer: '2017_county_exec',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2013_county_exec',
+            //                 opacity: 0
+            //                 },
+            //                     {
+            //                     layer: 'secular-schools',
+            //                     opacity: 0
+            //                     },    
+            //                     {
+            //                     layer: 'all-schools',
+            //                     opacity: 0
+            //                     },  
+            //                     {
+            //                     layer: 'jewish-schools',
+            //                     opacity: 0
+            //                     },             
+            //                 {
+            //                 layer: '1960-race-637khu',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1970-race-dm6sg6',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1980-race-09ndgz',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1990-race-940279',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2000-race-ar1826',
+            //                 opacity: 0
+            //                 }, 
+            //                 {
+            //                 layer: '2010-race-36y0ds',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2020-race-5w5o94',
+            //                 opacity: 0
+            //                 },              
+            //                     {
+            //                     layer: 'New Square 61',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'New Square_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Pomona 1967',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Pomona_label',
+            //                         opacity: 0
+            //                         },                              
+            //                     {
+            //                     layer: 'Wesley Hills 83',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Wesley Hills_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'New Hempstead 84',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'New Hempstead_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Chestnut Ridge 86',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Chestnut Ridge_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Airmont 91',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Airmont_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Montebello 86',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Montebello_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'kaser 91',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'kaser_label',
+            //                         opacity: 0
+            //                         } 
+            //                     ]
         },
         {
             id: 'chapter90s',
@@ -1192,124 +1422,124 @@ var config = {
                                     opacity: 1
                                     } 
                 ],
-            onChapterExit: [            	
-                    {
-                    layer: 'rockland-towns-villages-0ka1by',
-                    opacity: 0
-                    }, 
-                            {
-                            layer: '2017_county_exec',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2013_county_exec',
-                            opacity: 0
-                            },
-                                {
-                                layer: 'secular-schools',
-                                opacity: 0
-                                },    
-                                {
-                                layer: 'all-schools',
-                                opacity: 0
-                                },  
-                                {
-                                layer: 'jewish-schools',
-                                opacity: 0
-                                },             
-                            {
-                            layer: '1960-race-637khu',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1970-race-dm6sg6',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1980-race-09ndgz',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1990-race-940279',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2000-race-ar1826',
-                            opacity: 0
-                            }, 
-                            {
-                            layer: '2010-race-36y0ds',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2020-race-5w5o94',
-                            opacity: 0
-                            },              
-                                {
-                                layer: 'New Square 61',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'New Square_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Pomona 1967',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Pomona_label',
-                                    opacity: 0
-                                    },                              
-                                {
-                                layer: 'Wesley Hills 83',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Wesley Hills_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'New Hempstead 84',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'New Hempstead_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Chestnut Ridge 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Chestnut Ridge_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Airmont 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Airmont_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Montebello 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Montebello_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'kaser 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'kaser_label',
-                                    opacity: 0
-                                    } 
-                ]
+            // onChapterExit: [            	
+            //         {
+            //         layer: 'rockland-towns-villages-0ka1by',
+            //         opacity: 0
+            //         }, 
+            //                 {
+            //                 layer: '2017_county_exec',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2013_county_exec',
+            //                 opacity: 0
+            //                 },
+            //                     {
+            //                     layer: 'secular-schools',
+            //                     opacity: 0
+            //                     },    
+            //                     {
+            //                     layer: 'all-schools',
+            //                     opacity: 0
+            //                     },  
+            //                     {
+            //                     layer: 'jewish-schools',
+            //                     opacity: 0
+            //                     },             
+            //                 {
+            //                 layer: '1960-race-637khu',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1970-race-dm6sg6',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1980-race-09ndgz',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1990-race-940279',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2000-race-ar1826',
+            //                 opacity: 0
+            //                 }, 
+            //                 {
+            //                 layer: '2010-race-36y0ds',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2020-race-5w5o94',
+            //                 opacity: 0
+            //                 },              
+            //                     {
+            //                     layer: 'New Square 61',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'New Square_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Pomona 1967',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Pomona_label',
+            //                         opacity: 0
+            //                         },                              
+            //                     {
+            //                     layer: 'Wesley Hills 83',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Wesley Hills_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'New Hempstead 84',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'New Hempstead_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Chestnut Ridge 86',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Chestnut Ridge_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Airmont 91',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Airmont_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Montebello 86',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Montebello_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'kaser 91',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'kaser_label',
+            //                         opacity: 0
+            //                         } 
+            //     ]
         },
         
             {
@@ -1444,124 +1674,124 @@ var config = {
                                     opacity: 0
                                     } 
                 ],
-            onChapterExit: [            	
-                    {
-                    layer: 'rockland-towns-villages-0ka1by',
-                    opacity: 0
-                    }, 
-                            {
-                            layer: '2017_county_exec',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2013_county_exec',
-                            opacity: 0
-                            },
-                                {
-                                layer: 'secular-schools',
-                                opacity: 0
-                                },    
-                                {
-                                layer: 'all-schools',
-                                opacity: 0
-                                },  
-                                {
-                                layer: 'jewish-schools',
-                                opacity: 0
-                                },             
-                            {
-                            layer: '1960-race-637khu',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1970-race-dm6sg6',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1980-race-09ndgz',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1990-race-940279',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2000-race-ar1826',
-                            opacity: 0
-                            }, 
-                            {
-                            layer: '2010-race-36y0ds',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2020-race-5w5o94',
-                            opacity: 0
-                            },              
-                                {
-                                layer: 'New Square 61',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'New Square_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Pomona 1967',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Pomona_label',
-                                    opacity: 0
-                                    },                              
-                                {
-                                layer: 'Wesley Hills 83',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Wesley Hills_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'New Hempstead 84',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'New Hempstead_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Chestnut Ridge 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Chestnut Ridge_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Airmont 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Airmont_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Montebello 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Montebello_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'kaser 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'kaser_label',
-                                    opacity: 0
-                                    }
-                ]
+        //     onChapterExit: [            	
+        //             {
+        //             layer: 'rockland-towns-villages-0ka1by',
+        //             opacity: 0
+        //             }, 
+        //                     {
+        //                     layer: '2017_county_exec',
+        //                     opacity: 0
+        //                     },
+        //                     {
+        //                     layer: '2013_county_exec',
+        //                     opacity: 0
+        //                     },
+        //                         {
+        //                         layer: 'secular-schools',
+        //                         opacity: 0
+        //                         },    
+        //                         {
+        //                         layer: 'all-schools',
+        //                         opacity: 0
+        //                         },  
+        //                         {
+        //                         layer: 'jewish-schools',
+        //                         opacity: 0
+        //                         },             
+        //                     {
+        //                     layer: '1960-race-637khu',
+        //                     opacity: 0
+        //                     },
+        //                     {
+        //                     layer: '1970-race-dm6sg6',
+        //                     opacity: 0
+        //                     },
+        //                     {
+        //                     layer: '1980-race-09ndgz',
+        //                     opacity: 0
+        //                     },
+        //                     {
+        //                     layer: '1990-race-940279',
+        //                     opacity: 0
+        //                     },
+        //                     {
+        //                     layer: '2000-race-ar1826',
+        //                     opacity: 0
+        //                     }, 
+        //                     {
+        //                     layer: '2010-race-36y0ds',
+        //                     opacity: 0
+        //                     },
+        //                     {
+        //                     layer: '2020-race-5w5o94',
+        //                     opacity: 0
+        //                     },              
+        //                         {
+        //                         layer: 'New Square 61',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'New Square_label',
+        //                             opacity: 0
+        //                             },
+        //                         {
+        //                         layer: 'Pomona 1967',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'Pomona_label',
+        //                             opacity: 0
+        //                             },                              
+        //                         {
+        //                         layer: 'Wesley Hills 83',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'Wesley Hills_label',
+        //                             opacity: 0
+        //                             },
+        //                         {
+        //                         layer: 'New Hempstead 84',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'New Hempstead_label',
+        //                             opacity: 0
+        //                             },
+        //                         {
+        //                         layer: 'Chestnut Ridge 86',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'Chestnut Ridge_label',
+        //                             opacity: 0
+        //                             },
+        //                         {
+        //                         layer: 'Airmont 91',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'Airmont_label',
+        //                             opacity: 0
+        //                             },
+        //                         {
+        //                         layer: 'Montebello 86',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'Montebello_label',
+        //                             opacity: 0
+        //                             },
+        //                         {
+        //                         layer: 'kaser 91',
+        //                         opacity: 0
+        //                         },
+        //                             {
+        //                             layer: 'kaser_label',
+        //                             opacity: 0
+        //                             }
+        //         ]
         },
         {
         id: 'interlude',
@@ -1705,124 +1935,124 @@ var config = {
                                     opacity: 0
                                     }                 
                                 ],
-            onChapterExit: [            	
-                    {
-                    layer: 'rockland-towns-villages-0ka1by',
-                    opacity: 0
-                    }, 
-                            {
-                            layer: '2017_county_exec',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2013_county_exec',
-                            opacity: 0
-                            },
-                                {
-                                layer: 'secular-schools',
-                                opacity: 0
-                                },    
-                                {
-                                layer: 'all-schools',
-                                opacity: 0
-                                },  
-                                {
-                                layer: 'jewish-schools',
-                                opacity: 0
-                                },             
-                            {
-                            layer: '1960-race-637khu',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1970-race-dm6sg6',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1980-race-09ndgz',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1990-race-940279',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2000-race-ar1826',
-                            opacity: 0
-                            }, 
-                            {
-                            layer: '2010-race-36y0ds',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2020-race-5w5o94',
-                            opacity: 1
-                            },              
-                                {
-                                layer: 'New Square 61',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'New Square_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Pomona 1967',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Pomona_label',
-                                    opacity: 0
-                                    },                              
-                                {
-                                layer: 'Wesley Hills 83',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Wesley Hills_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'New Hempstead 84',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'New Hempstead_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Chestnut Ridge 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Chestnut Ridge_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Airmont 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Airmont_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Montebello 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Montebello_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'kaser 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'kaser_label',
-                                    opacity: 0
-                                    } 
-                ]
+            // onChapterExit: [            	
+            //         {
+            //         layer: 'rockland-towns-villages-0ka1by',
+            //         opacity: 0
+            //         }, 
+            //                 {
+            //                 layer: '2017_county_exec',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2013_county_exec',
+            //                 opacity: 0
+            //                 },
+            //                     {
+            //                     layer: 'secular-schools',
+            //                     opacity: 0
+            //                     },    
+            //                     {
+            //                     layer: 'all-schools',
+            //                     opacity: 0
+            //                     },  
+            //                     {
+            //                     layer: 'jewish-schools',
+            //                     opacity: 0
+            //                     },             
+            //                 {
+            //                 layer: '1960-race-637khu',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1970-race-dm6sg6',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1980-race-09ndgz',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1990-race-940279',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2000-race-ar1826',
+            //                 opacity: 0
+            //                 }, 
+            //                 {
+            //                 layer: '2010-race-36y0ds',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2020-race-5w5o94',
+            //                 opacity: 1
+            //                 },              
+            //                     {
+            //                     layer: 'New Square 61',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'New Square_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Pomona 1967',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Pomona_label',
+            //                         opacity: 0
+            //                         },                              
+            //                     {
+            //                     layer: 'Wesley Hills 83',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Wesley Hills_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'New Hempstead 84',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'New Hempstead_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Chestnut Ridge 86',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Chestnut Ridge_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Airmont 91',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Airmont_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Montebello 86',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Montebello_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'kaser 91',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'kaser_label',
+            //                         opacity: 0
+            //                         } 
+            //     ]
         },
         {
         id: 'interlude',
@@ -1967,124 +2197,124 @@ var config = {
                                     opacity: 0
                                     } 
                 ],
-            onChapterExit: [            	
-                    {
-                    layer: 'rockland-towns-villages-0ka1by',
-                    opacity: 0
-                    }, 
-                            {
-                            layer: '2017_county_exec',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2013_county_exec',
-                            opacity: 0
-                            },
-                                {
-                                layer: 'secular-schools',
-                                opacity: 0
-                                },    
-                                {
-                                layer: 'all-schools',
-                                opacity: 0
-                                },  
-                                {
-                                layer: 'jewish-schools',
-                                opacity: 0
-                                },             
-                            {
-                            layer: '1960-race-637khu',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1970-race-dm6sg6',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1980-race-09ndgz',
-                            opacity: 0
-                            },
-                            {
-                            layer: '1990-race-940279',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2000-race-ar1826',
-                            opacity: 0
-                            }, 
-                            {
-                            layer: '2010-race-36y0ds',
-                            opacity: 0
-                            },
-                            {
-                            layer: '2020-race-5w5o94',
-                            opacity: 0
-                            },              
-                                {
-                                layer: 'New Square 61',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'New Square_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Pomona 1967',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Pomona_label',
-                                    opacity: 0
-                                    },                              
-                                {
-                                layer: 'Wesley Hills 83',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Wesley Hills_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'New Hempstead 84',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'New Hempstead_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Chestnut Ridge 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Chestnut Ridge_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Airmont 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Airmont_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'Montebello 86',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'Montebello_label',
-                                    opacity: 0
-                                    },
-                                {
-                                layer: 'kaser 91',
-                                opacity: 0
-                                },
-                                    {
-                                    layer: 'kaser_label',
-                                    opacity: 0
-                                    } 
-                ]
+            // onChapterExit: [            	
+            //         {
+            //         layer: 'rockland-towns-villages-0ka1by',
+            //         opacity: 0
+            //         }, 
+            //                 {
+            //                 layer: '2017_county_exec',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2013_county_exec',
+            //                 opacity: 0
+            //                 },
+            //                     {
+            //                     layer: 'secular-schools',
+            //                     opacity: 0
+            //                     },    
+            //                     {
+            //                     layer: 'all-schools',
+            //                     opacity: 0
+            //                     },  
+            //                     {
+            //                     layer: 'jewish-schools',
+            //                     opacity: 0
+            //                     },             
+            //                 {
+            //                 layer: '1960-race-637khu',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1970-race-dm6sg6',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1980-race-09ndgz',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '1990-race-940279',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2000-race-ar1826',
+            //                 opacity: 0
+            //                 }, 
+            //                 {
+            //                 layer: '2010-race-36y0ds',
+            //                 opacity: 0
+            //                 },
+            //                 {
+            //                 layer: '2020-race-5w5o94',
+            //                 opacity: 0
+            //                 },              
+            //                     {
+            //                     layer: 'New Square 61',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'New Square_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Pomona 1967',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Pomona_label',
+            //                         opacity: 0
+            //                         },                              
+            //                     {
+            //                     layer: 'Wesley Hills 83',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Wesley Hills_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'New Hempstead 84',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'New Hempstead_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Chestnut Ridge 86',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Chestnut Ridge_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Airmont 91',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Airmont_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'Montebello 86',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'Montebello_label',
+            //                         opacity: 0
+            //                         },
+            //                     {
+            //                     layer: 'kaser 91',
+            //                     opacity: 0
+            //                     },
+            //                         {
+            //                         layer: 'kaser_label',
+            //                         opacity: 0
+            //                         } 
+            //     ]
         },
         {
             id: 'Eastern_europe',
