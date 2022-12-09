@@ -65,6 +65,7 @@ if (record.audioOn) {
         }else{audio.mute=True;}
 
         }
+        
 if (record.audio) {
         var audioDiv = document.createElement('div');
         audioDiv.setAttribute('class', 'audioContainer');
