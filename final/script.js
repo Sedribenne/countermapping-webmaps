@@ -114,6 +114,26 @@ config.chapters.forEach((record, idx) => {
         videoDiv.appendChild(video)
         chapter.appendChild(videoDiv);
     }
+
+  if (record.audioOn) {
+        if(record.audioOn=='yes'){
+          audio.mute=false;
+        }else{audio.mute=True;}
+
+        }
+    if (record.audio) {
+        var audioDiv = document.createElement('div');
+        audioDiv.setAttribute('class', 'audioContainer');
+        audio =  document.createElement('audio');
+        audio.controls=true;
+        audio.autoplay=true;
+        audio.loop=true;
+        audio.type="audio/mpeg";
+        audio.src = record.audio;
+        audioDiv.appendChild(audio)
+        chapter.appendChild(audioDiv);
+    }
+
     container.setAttribute('id', record.id);
     container.classList.add('step');
     if (idx === 0) {
