@@ -168,6 +168,12 @@ video {
     width:32%;
     transform: translate(-50%);
 }
+audio {
+    margin-left: 43vw;
+    width:32%;
+    transform: translate(-50%);
+}
+}
 
 /* Fix issue on mobile browser where scroll breaks  */
 .mapboxgl-canvas-container.mapboxgl-touch-zoom-rotate.mapboxgl-touch-drag-pan,
