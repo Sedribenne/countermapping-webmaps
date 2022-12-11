@@ -103,25 +103,7 @@ config.chapters.forEach((record, idx) => {
         story.innerHTML = record.description;
         chapter.appendChild(story);
     }
-    if (record.video) {
-        var videoDiv = document.createElement('div');
-        videoDiv.setAttribute('class', 'videoContainer');
-        video =  document.createElement('video');
-        video.controls=true;
-        video.autoplay=true;
-        video.loop=true;
-        video.src = record.video;
-        videoDiv.appendChild(video)
-        chapter.appendChild(videoDiv);
-    }
-
-  if (record.audioOn) {
-        if(record.audioOn=='yes'){
-          audio.mute=false;
-        }else{audio.mute=True;}
-
-        }
-    if (record.audio) {
+        if (record.audio) {
         var audioDiv = document.createElement('div');
         audioDiv.setAttribute('class', 'audioContainer');
         audio =  document.createElement('audio');
@@ -132,6 +114,90 @@ config.chapters.forEach((record, idx) => {
         audio.src = record.audio;
         audioDiv.appendChild(audio)
         chapter.appendChild(audioDiv);
+    }
+      if (record.audioOn) {
+        if(record.audioOn=='yes'){
+          audio.mute=false;
+        }else{audio.mute=True;}
+
+        }
+        if (record.image2) {
+        var image2 = new Image();
+        image2.src = record.image2;
+        chapter.appendChild(image2);
+    }
+        if (record.description2) {
+        var story = document.createElement('p');
+        story.innerHTML = record.description2;
+        chapter.appendChild(story);
+    }
+        if (record.audio2) {
+        var audioDiv2 = document.createElement('div');
+        audioDiv2.setAttribute('class', 'audioContainer');
+        audio2 =  document.createElement('audio');
+        audio2.controls=true;
+        audio2.autoplay=true;
+        audio2.loop=true;
+        audio2.type="audio/mpeg";
+        audio2.src = record.audio2;
+        audioDiv2.appendChild(audio2)
+        chapter.appendChild(audioDiv2);
+    }
+        if (record.audioOn2) {
+        if(record.audioOn2=='yes'){
+          audio2.mute=false;
+        }else{audio2.mute=True;}
+
+        }
+        if (record.image3) {
+        var image3 = new Image();
+        image3.src = record.image3;
+        chapter.appendChild(image3);
+    }
+        if (record.description3) {
+        var story = document.createElement('p');
+        story.innerHTML = record.description3;
+        chapter.appendChild(story);
+    }
+
+    if (record.audio3) {
+        var audioDiv3 = document.createElement('div');
+        audioDiv3.setAttribute('class', 'audioContainer');
+        audio3 =  document.createElement('audio');
+        audio3.controls=true;
+        audio3.autoplay=true;
+        audio3.loop=true;
+        audio3.type="audio/mpeg";
+        audio3.src = record.audio3;
+        audioDiv3.appendChild(audio3)
+        chapter.appendChild(audioDiv3);
+    }
+        if (record.audioOn3) {
+    if(record.audioOn3=='yes'){
+        audio3.mute=false;
+        }else{audio3.mute=True;}
+
+        }
+        if (record.description4) {
+        var story = document.createElement('p');
+        story.innerHTML = record.description4;
+        chapter.appendChild(story);
+    }
+        if (record.description5) {
+        var story = document.createElement('p');
+        story.innerHTML = record.description5;
+        chapter.appendChild(story);
+    }
+    if (record.video) {
+        var videoDiv = document.createElement('div');
+        videoDiv.setAttribute('class', 'videoContainer');
+        video =  document.createElement('video');
+        video.controls=true;
+        video.autoplay=true;
+        video.loop=true;
+        video.src = record.video;
+        videoDiv.appendChild(video)
+        chapter.appendChild(videoDiv);
     }
 
     container.setAttribute('id', record.id);
