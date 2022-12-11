@@ -12,12 +12,63 @@ var config = {
     title: 'Hasidim on Hudson',
     subtitle: 'A Narrative of Hasidic development in Rockland County',
     authors: 'By Emile Bensedrine and Kellen Cooks, quotes from Jennifer Wilmoth, principal of Kakiat STEAM Academy in the East Ramapo School District, and has been living within the district for more than 20 years.',
-    para1:'The Hudson Valley, which stretches from the northern boundary of New York City to Albany, contains numerous diverse communities with equally diverse development trajectories. With its proximity to New York, it has long attracted tourists. Since its connection to the Erie Canal, the Hudson Valley became a hub of industry and manufacturing. Areas of the Lower Hudson Valley in particular have seen the development of affluent suburban communities. Over the past few decades, the Hudson Valley like much of the nation has seen significant deindustrialization. Towns in decline have thus seen two types of revitalization, one from the influx of largely Latino immigrants, and the other through amenity development driven by luxury real estate investment targeting more affluent newcomers.',
+    para1:'The Hudson Valley, which stretches from the northern boundary of New York City to Albany, contains numerous diverse communities with equally diverse development trajectories. With its proximity to New York, it has long attracted tourists. Since its connection to the Erie Canal, the Hudson Valley became a hub of industry and manufacturing. Areas of the Lower Hudson Valley in particular have seen the development of affluent suburban communities. Over the past few decades, the Hudson Valley, like much of the nation, has seen significant deindustrialization. Towns in decline have thus seen two types of revitalization, one from the influx of largely Latino immigrants, and the other through amenity development driven by luxury real estate investment targeting more affluent newcomers.',
     para2:'Another, often unmentioned, type of development has also played a significant role in transforming the Hudson Valley, that caused by the influx of Hasidic Communities into established suburban neighborhoods. Hasidic development in the Lower Hudson Valley represents a unique and separate development pattern that has led to significant inter-communal tensions ranging from zoning conflicts, to displacement, to the divestment from the local school district. The following content is an exploration into the story of Hasidic Development in Rockland County, its scale, and its impacts. The intention of the data is not to demonize any group, but rather to contextualize and shed light on a little-understood phenomenon riddled with controversy.',
     footer: 'Video source: <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
     
-    chapters: [        
-    	{
+    chapters: [    
+            
+        {                        
+            id: 'interlude',
+            alignment: 'center',
+            title: '',
+            location: {
+            center: [-73.95988, 41.16000],
+            zoom: 7.5,
+            pitch: 0.00,
+            bearing: 0.00
+            },
+            audio: 'Audio Files/Jennifer_intro.mp3',
+            audioOn:'yes',
+            description:"Jennifer Wilmoth, Principal at Kakiat Elementary STEAM School.",
+
+            audio2:'Audio Files/Ashley_introreal.mp3',
+            audioOn2:'yes',
+            description2:"Ashley Leveille, Member of East Ramapo School District Board",
+
+            audio3:'Audio Files/Nathan_intro.mp3',
+            audioOn3:'yes',
+            description3: "Nathan Powell, Resident of Rockland County native to Spring Valley",
+
+            description4: 'The above people are all longtime residents of Rockland County familiar with the school system and were all interviewed as a part of this project.',
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            speed: 1, 
+             onChapterEnter: [],
+        }, 
+        {            
+            id: 'intro',
+            alignment: 'center',
+            title: '',
+            description:"«My dad graduated from Ramapo in 1978. He's been here since he was in like four or five. My mom moved here, probably closer to the 90s, when my sisters were born. But yeah, so all the people in my household went through East Ramapo at some point. My niece is actually at Hempstead [Elementary School] now she's a fifth grader. So like the whole family has been through that system, almost entirely.»",
+            description2:" Nathan Powell, a graduate urbanism student at Concordia University, spent his entire childhood in East Ramapo Schools. So did his sister, Ashley Leveille, who is now a member of the district’s school board.  Throughout his upbringing in East Ramapo Schools, Nathan noticed his educational environment changing around him.",
+            description3: "«I started out in East Ramapo in kindergarten, and then I went to Hempstead. Hempstead at that point was a K-e school. And then for grades four to six, you have to go to Colton. And by the time I got to third grade, Colton was sold to the Hasidim. So they made Hempstead from K-3 to K-6, which was like a big change. We used to have like maybe four to five classes per grade that turned into basically two main classes each grade [due to] space concerns.»",
+            description4:"«As a result of Colton’s closing, a lot of people got sent to either Lime Kiln or at that time, Hillcrest, which got closed and sold to the Hasidim and replaced by Kakiat Elementary School.»", 
+            description5:"«What they used to do is send the freshmen to a separate building called the Freshman Center to get them used to high school before they went to Ramapo High School and then Ramapo was 10-12, which allowed them to have more space to do more things. That freshman center program also was stopped because they had to reconfigure the school district after they sold another school to the Hasidim. So then the Freshman Center became Kakiat which is now the Kakiat STEAM Academy, which deals with the overflow from what used to be Hempstead and Colton. And then [now] Ramapo is just a high school from 9th grade to 12th grade.»",
+            location: {
+            center: [-73.95988, 41.16000],
+            zoom: 7.5,
+            pitch: 0.00,
+            bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            speed: 1, 
+             onChapterEnter: [],
+         },          
+        {
             id: 'first_chapter',
             alignment: 'right',
             hidden: false,
@@ -372,7 +423,7 @@ var config = {
                                 },
                                     {
                                     layer: 'Pomona_label',
-                                    opacity: 1
+                                    opacity: 0
                                     },                              
                                 {
                                 layer: 'Wesley Hills 83',
@@ -431,7 +482,7 @@ var config = {
             hidden: false,
             title: '1970s',
             image: 'images/Skver.png',
-            description: 'The years following, Hasidic communities continued to grow in Rockland and neighboring Orange counties as more Hasidim moved into the region. Different Hasidic groups often settled in different areas, with the Vizhnitz Dynasty beggining to settle in the neighborhood of Monsey. Even in their early development these early municipalities were some of the poorest in the state, yet residents often did not experience the same conditions of other low-income areas.',
+            description: 'The years following, Hasidic communities grew in Rockland and neighboring Orange counties as more Hasidim moved into the region. Different Hasidic groups often settled in different areas, with the Vizhnitz Dynasty beginning to settle in the neighborhood of Monsey. Even in their early development these early municipalities were some of the poorest in the state, yet residents often did not experience the same conditions  other low-income areas.',
             location: {
                 center: [-73.95988, 41.16000],
 				zoom: 10.30,
@@ -834,7 +885,7 @@ var config = {
             hidden: false,
             title: '2000s',
             // image: 'images/source.png',
-            description: 'The 2000s onward mark a period of rapid suburban diversification across the United States. In this period, the almost exclusively white suburbs of Rockland begin to change with the influx of people of different races. Places like Spring Valley changed immensely, for example, with the influx of Hispanic and Latino people from Central America. Hasidic enclaves, however, did not see the same change in racial makeup as one would expect, remaining over 95% white in many areas.',
+            description: "The 2000s onward mark a period of rapid suburban diversification across the United States. In this period, Rockland's almost exclusively white suburbs began to change with the influx of people of different races. Places like Spring Valley changed immensely, for example, with the influx of Hispanic and Latino people from Central America. Hasidic enclaves, however, did not see the same change in racial makeup as one would expect, remaining over 95% white in many areas.",
             location: {
                 center: [-73.95988, 41.16000],
 				zoom: 10.30,
@@ -964,11 +1015,15 @@ var config = {
         },
         {
         id: 'interlude',
-        alignment: 'concentrated',
+        alignment: 'center',
         hidden: false,
         description: '«So when I started in East Ramapo [in the early 2000s], I would say like 50% of each classroom had Haitian children. Now, one or two, one or two. That is just how many of their Haitian families have just moved out of the district»',
-        audio: 'Audio Files/Jennifer Wilmoth.mp3',
-        audioOn: 'yes',
+        location: {
+        center: [-73.95988, 41.16000],
+        zoom: 10.30,
+        pitch: 0.00,
+        bearing: 0.00
+        },
         onChapterEnter: [                                                                                                                                 
                 ],
             onChapterExit: [              
