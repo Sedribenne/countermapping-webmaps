@@ -156,12 +156,18 @@ a, a:hover, a:visited {
 	height: 20vw;
 }
 #interlude p{
-    font-size: 9 vh;
+    font-size: 20 vh;
     text-align: center;
     color: black;
-    margin-left: 19vw;
-    margin-right: 19vw;
-    background-color: : white;
+    margin-left: 10vw;
+    margin-right: 10vw;
+    background-color: ;
+}
+image{
+    margin-left: 43vw;
+    width:10%;
+    transform: translate(-50%);
+}
 }
 video {
     margin-left: 43vw;
