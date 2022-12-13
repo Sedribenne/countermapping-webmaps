@@ -141,7 +141,7 @@ a, a:hover, a:visited {
 }
 
 .step img {
-    width: 100%;
+    width: 105%;
 }
 
 @media (max-width: 750px) {
@@ -163,19 +163,20 @@ a, a:hover, a:visited {
     margin-right: 10vw;
     background-color: ;
 }
+
 image{
-    margin-left: 43vw;
+    margin-left: 42vw;
     width:10%;
     transform: translate(-50%);
 }
 }
 video {
-    margin-left: 43vw;
+    /*margin-left: 43vw;*/
     width:32%;
     transform: translate(-50%);
 }
 audio {
-    margin-left: 43vw;
+    margin-left: 21vw;
     width:32%;
     transform: translate(-50%);
 }
