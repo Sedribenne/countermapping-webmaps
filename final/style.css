@@ -150,6 +150,9 @@ a, a:hover, a:visited {
         margin: 0 auto;
     }
 }
+.step audio {
+    width: 100%;
+    }
 
 #interlude {
 	width: 100vw;
@@ -164,6 +167,13 @@ a, a:hover, a:visited {
     background-color: ;
 }
 
+#interlude audio{
+    align: center;*/
+    /*width: 30vw;*/
+    margin-left: 90vw;
+    margin-right: 30vw;
+}
+
 image{
     margin-left: 42vw;
     width:10%;
@@ -175,11 +185,11 @@ video {
     width:32%;
     transform: translate(-50%);
 }
-audio {
-    margin-left: 21vw;
+/*audio {
+    margin-left: 43vw;
     width:32%;
     transform: translate(-50%);
-}
+}*/
 }
 
 /* Fix issue on mobile browser where scroll breaks  */
