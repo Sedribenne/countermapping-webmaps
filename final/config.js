@@ -214,7 +214,7 @@ var config = {
                                 ],
                                 },    
         {                                            
-	    id: 'interlude',
+	    id: 'interlude2',
 	    alignment: 'center',
 	    hidden: false,
 	    description: '«There are two reasons villages get formed in Rockland, One is to keep the Hasidim out and the other is to keep the Hasidim in.» -Paul Alder, Rockland County Council on Jewish Relations ',
@@ -1014,7 +1014,7 @@ var config = {
         
         },
         {
-        id: 'interlude',
+        id: 'interlude3',
         alignment: 'center',
         hidden: false,
         description: '«So when I started in East Ramapo [in the early 2000s], I would say like 50% of each classroom had Haitian children. Now, one or two, one or two. That is just how many of their Haitian families have just moved out of the district»',
@@ -1164,7 +1164,7 @@ var config = {
            
         },
         {
-        id: 'interlude',
+        id: 'interlude4',
         alignment: 'center',
         hidden: false,
         description: "«Spring Valley is right now probably about 80% Hispanic. But, when I moved up here, it was probably, definitely majority Black, but mostly people of Haitian descent. The Hispanics were really Dominican, but now it's more an immigrant population from El Salvador, Guatemala, and those Central American countries.»",
@@ -1309,8 +1309,8 @@ var config = {
            
         },
         {
-            id: 'Eastern_europe',
-            alignment: 'left',
+            id: 'interlude4',
+            alignment: 'center',
             hidden: false,
             image:'images/poland-and-lithuania-yiddish.png',
             title: 'Origins of Hasidism in Central and Eastern Europe',
@@ -1352,16 +1352,29 @@ var config = {
             onChapterExit: []
         },
                 {
-        id: 'interlude',
+        id: 'interlude5',
         alignment: 'center',
         hidden: false,
-        description: "Jennifer Wilmoth formerly lived in Crown Heights, Brooklyn, where, to her, it felt as though the Jewish and non-Jewish communities had more interation. «Crown Heights is also a community that's known for having Hasidics and ultra orthodox people, and I used to go to each other's stores and we would talk in the neighborhood. You know, that was something that I was used to in Brooklyn. Here, things are a little different.»"
+        description: "Jennifer Wilmoth formerly lived in Crown Heights, Brooklyn, where, to her, it felt as though the Jewish and non-Jewish communities had more interation.",
+        audioOn: 'yes',
+        audio: 'Audio Files/Jen_mid.mp3',
+                location: {
+                center: [-73.96303, 40.64629],
+                zoom: 11.76,
+                pitch: 44.13,
+                bearing: -16.84,
+              speed: 1, // make the flying slow
+              curve: 1, // change the speed at which it zooms out
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: true,
+            callback: '',
         },
         {
-        id: 'interlude',
+        id: 'interlude6',
         alignment: 'center',
         hidden: false,
-        description: "Hasidic Rebbes, who lead Hasidic communities quickly realized that New York City was unfit for a pure religious life. They quickly looked to nearby rapidly suburbanizing rural areas for places to live an unbothered religious life. New Square being the first of these places in Rockland County. Hasidim quickly began to move north to Rockland and founded Yeshivas—religious schools children attend until they marry."
+        description: "Hasidic Rebbes, who lead Hasidic communities quickly realized that New York City was unfit for a pure religious life. They quickly looked to nearby rapidly suburbanizing rural areas for places to live an unbothered religious life. New Square being the first of these places in Rockland County. Hasidim quickly began to move north to Rockland and founded Yeshivas—religious schools children attend until they marry.",
         },
         {
             id: 'All Schools',
@@ -1440,11 +1453,11 @@ var config = {
                 ],
         },
         {
-            id: 'Secular Schools',
+            id: 'Non-Jewish Schools',
             alignment: 'right',
             hidden: false,
-            title: 'Secular Schools in Rockland',
-            // description: 'Copy these sections to add to your story.',
+            title: 'Non-Jewish Schools in Rockland',
+            description: 'There is a high concentration of secular schools in Haverstraw and Clarkstown. However, when you compare this map to the map of all schools in Rockland County, the school density of these tracts pales in comparison to Hasidic enclaves within and near the Town of Ramapo. Furthermore, we note the blank census tracts in the Town of Ramapo where there are no secular schools at all, where Jewish schools and yeshivas are the only schools in the neighborhood.',
 
             location: {
                 center: [-73.95988, 41.16000],
@@ -1482,17 +1495,17 @@ var config = {
                 ],
         },
         {
-        id: 'interlude',
+        id: 'interlude7',
         alignment: 'center',
         hidden: false,
-        description: 'Text introducing elections section',
+        description: "« It's like there's no way that many Yeshivas are within the East Ramapo School District. East Ramapo is big, but you could drive through all the boundaries that fit into East Ramapo easily, so it's beyond me how all these Yeshivas are located in the district.» - Ashley Leveille",
         },
         {
             id: 'Election_2013',
             alignment: 'left',
             hidden: false,
             title: 'County Executive Race of 2013',
-            // description: 'Copy these sections to add to your story.',
+            description: 'In 2013, Republican Ed Day won the Rockland County Executive seat with 52% of the vote, edging out Democrat David Fried. This visualization represents the conservative share of each election district’s votes (Republican Ed Day + Conservative Party candidate Thomas Sullivan), with high concentrations of conservative votes in red, and low concentrations (and thus votes for the Democratic candidate) in blue.',
 
             location: {
                 center: [-73.95988, 41.16000],
@@ -1535,7 +1548,7 @@ var config = {
             alignment: 'left',
             hidden: false,
             title: 'County Executive Race of 2017',
-            description: 'Copy these sections to add to your story.',
+            description: 'In 2017, Day won again with 54% of the vote, slightly more than his first election. This visualization represents the conservative share of each election district’s votes (Republican Ed Day + Conservative Party candidate Thomas Sullivan), with high concentrations of conservative votes in red, and low concentrations (and thus votes for liberal candidates) in blue. While the vote distribution is largely similar, Day intensified his hold over Republican strongholds such as Pearl River in the southern section of the county.',
             location: {
                 center: [-73.95988, 41.16000],
                 zoom: 10.3,
@@ -1572,12 +1585,179 @@ var config = {
         },       
         {
         id: 'interlude',
+        alignment: 'left',
+        hidden: false,
+        description: "«I started in 1999 to 2000, it was an amazing board. I think at the time, people just looked at [the board as being] representative of who was in the district. The thing with that Board is that [they were] always in schools, right? So they, you know, they would come talk to kids. «How are you doing», «What are you learning?». Wherever the after school programs were, they were there as well. Over time, what happened is, the non-public community felt like the tax rate was too high with every budget vote. [They were] not really willing to pay, even though, as you as you heard, we, the transportation services are [in public power], the [special] education services are the public power. So what they decided to do is that they would vote-in constituents that they wanted.,.they would have members in it that were like a watchdog or [would] turn down this or vote or just guide the budget to where they wanted it to be, which at times was less than 2% increase. They wanted us to use our reserve funds all the time, they wanted to have like next to nothing of an increase, and everyone knows you can't maintain on that. You know, you have a boiler go bad in a school building, that's what your reserves are for. So, putting those constituents in and having a block vote made it very difficult for the community to get members like who I originally described.» -Jennifer Wilmoth",
+        },
+        {
+        id: 'interlude',
+        alignment: 'left',
+        hidden: false,
+        description: "«Leveille provides her own anecdote describing the influence of the Hasidic block vote in local school board politics.»",
+        audioOn: 'yes',
+        audio: "Audio Files/Loc_pwr_hsdic.mp3",
+        description2: "«Even after a NAACP-led court decision pushed the school district to reform its voting system, Leveille still doubts the ability for the new voting system to address the district’s inequities.»",
+        description3: "«Everybody had the chance to vote for me when I first ran. Now only if you live in Ward 2 could you vote for me now. What's happening is the demographics within the neighborhood are changing. It's literally like honestly a lose-lose. I think the NAACP thought that this was going to be a great idea, but I don't think that they thought for long term because like our neighborhood already is changing. What's happening is that in the three minority wards, the demographics are changing like crazy. So I don't know what would happen when my term’s up, if I would have a chance to get my seat again. Because everything is literally changing.» - Ashley Leveille",
+        },
+        {
+            id: 'Future_chapter',
+            alignment: 'center',
+            hidden: false,
+            title: 'Into the Future',
+            description: "«If the block voting, the Hasidic vote, and the inability of our immigrants to vote continues where we cannot pass a school budget of 2% increase and we're on austerity every year, I think there's a strong possibility that East Ramapo will not exist in 10 years.»",
+            description2: "«We cannot sustain a budget like that. We are 30 million in debt right now, I think might be bigger. It might be more than that. So, if the district cannot be sustained, I suspect it will be dismantled, [and] there is a possibility will be divided into fourths, right? Suffern may have to take a quarter of it and Pearl River might have to take a quarter of it and North Rockland might have to take a quarter of it and Clarkstown might have to take a quarter of it…»",
+            description3: "«Our kids are already misunderstood. I don't know if they're gonna be welcomed in some of those districts that I called out, right. That would not be a good day.» - Jennifer Wilmoth",
+            location: {
+            center: [-73.95988, 41.16000],
+            zoom: 7.5,
+            pitch: 0.00,
+            bearing: 0.00
+            },
+            mapAnimation: 'flyTo',
+            rotateAnimation: false,
+            callback: '',
+            audio: 'off',
+            speed: 1, 
+            onChapterEnter: 
+                [                
+                    {
+                    layer: 'rockland-towns-villages-0ka1by',
+                    opacity: 1
+                    }, 
+                            {
+                            layer: '2017_county_exec',
+                            opacity: 0
+                            },
+                            {
+                            layer: '2013_county_exec',
+                            opacity: 0
+                            },
+                                {
+                                layer: 'secular-schools',
+                                opacity: 0
+                                },    
+                                {
+                                layer: 'all-schools',
+                                opacity: 0
+                                },  
+                                {
+                                layer: 'jewish-schools',
+                                opacity: 0
+                                },             
+                            {
+                            layer: '1960-race-637khu',
+                            opacity: 0
+                            },
+                            {
+                            layer: '1970-race-dm6sg6',
+                            opacity: 0
+                            },
+                            {
+                            layer: '1980-race-09ndgz',
+                            opacity: 0
+                            },
+                            {
+                            layer: '1990-race-940279',
+                            opacity: 0
+                            },
+                            {
+                            layer: '2000-race-ar1826',
+                            opacity: 0
+                            }, 
+                            {
+                            layer: '2010-race-36y0ds',
+                            opacity: 0
+                            },
+                            {
+                            layer: '2020-race-5w5o94',
+                            opacity: 0
+                            },              
+                                {
+                                layer: 'New Square 61',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'New Square_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Spring Valley',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Spring Valley_Label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Pomona 1967',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Pomona_label',
+                                    opacity: 0
+                                    },                              
+                                {
+                                layer: 'Wesley Hills 83',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Wesley Hills_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'New Hempstead 84',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'New Hempstead_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Chestnut Ridge 86',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Chestnut Ridge_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Airmont 91',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Airmont_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Montebello 86',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Montebello_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'kaser 91',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'kaser_label',
+                                    opacity: 0
+                                    },   
+                                ],
+                                }, 
+        {
+        id: 'interlude',
         alignment: 'center',
         hidden: false,
-        description: " I started in 1999-2000, it was an amazing board. I think at the time, people just looked at [the board as being] representative of who was in the district. The thing with that Board is that [they were] always in schools, right? So they, you know, they would come talk to kids. «How are you doing», «What are you learning?». Wherever the after school programs were, they were there as well. Over time, what happened is, the non-public community felt like the tax rate was too high with every budget vote. [They were] not really willing to pay, even though, as you as you heard, we, the transportation services are [in public power], the [special] education services are the public power. So what they decided to do is that they would vote-in constituents that they wanted.,.they would have members in it that were like a watchdog or [would] turn down this or vote or just guide the budget to where they wanted it to be, which at times was less than 2% increase. They wanted us to use our reserve funds all the time, they wanted to have like next to nothing of an increase, and everyone knows you can't maintain on that. You know, you have a boiler go bad in a school building, that's what your reserves are for. So, putting those constituents in and having a block vote made it very difficult for the community to get members like who I originally described."
-        },
-
-
+        // description: "«»",
+        audioOn: 'yes',
+        audio: "Audio Files/Ashley outtro.mp3",
+        audioOn2: 'yes',
+        audio2: "Audio Files/Jennifer Wilmoth-outtro.mp3",
+        audioOn3: 'yes',
+        audio3: "Audio Files/Nathan_outtro.mp3",
+        },   
     ]
 };
 
