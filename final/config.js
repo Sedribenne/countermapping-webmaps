@@ -11,7 +11,7 @@ var config = {
     use3dTerrain: true, //set true for enabling 3D maps.
     title: 'Hasidim on Hudson',
     subtitle: 'A Narrative of Hasidic development in Rockland County',
-    authors: 'By Emile Bensedrine and Kellen Cooks, quotes from Jennifer Wilmoth, principal of Kakiat STEAM Academy in the East Ramapo School District, and has been living within the district for more than 20 years.',
+    authors: 'By Emile Bensedrine and Kellen Cooks',
     para1:'The Hudson Valley, which stretches from the northern boundary of New York City to Albany, contains numerous diverse communities with equally diverse development trajectories. With its proximity to New York, it has long attracted tourists. Since its connection to the Erie Canal, the Hudson Valley became a hub of industry and manufacturing. Areas of the Lower Hudson Valley in particular have seen the development of affluent suburban communities. Over the past few decades, the Hudson Valley, like much of the nation, has seen significant deindustrialization. Towns in decline have thus seen two types of revitalization, one from the influx of largely Latino immigrants, and the other through amenity development driven by luxury real estate investment targeting more affluent newcomers.',
     para2:'Another, often unmentioned, type of development has also played a significant role in transforming the Hudson Valley, that caused by the influx of Hasidic Communities into established suburban neighborhoods. Hasidic development in the Lower Hudson Valley represents a unique and separate development pattern that has led to significant inter-communal tensions ranging from zoning conflicts, to displacement, to the divestment from the local school district. The following content is an exploration into the story of Hasidic Development in Rockland County, its scale, and its impacts. The intention of the data is not to demonize any group, but rather to contextualize and shed light on a little-understood phenomenon riddled with controversy.',
     footer: 'Video source: <br> Created using <a href="https://github.com/mapbox/storytelling" target="_blank">Mapbox Storytelling</a> template.',
@@ -1502,7 +1502,7 @@ var config = {
         },
         {
             id: 'Election_2013',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             title: 'County Executive Race of 2013',
             description: 'In 2013, Republican Ed Day won the Rockland County Executive seat with 52% of the vote, edging out Democrat David Fried. This visualization represents the conservative share of each election district’s votes (Republican Ed Day + Conservative Party candidate Thomas Sullivan), with high concentrations of conservative votes in red, and low concentrations (and thus votes for the Democratic candidate) in blue.',
@@ -1545,7 +1545,7 @@ var config = {
         
         {
             id: 'Election_2017',
-            alignment: 'left',
+            alignment: 'right',
             hidden: false,
             title: 'County Executive Race of 2017',
             description: 'In 2017, Day won again with 54% of the vote, slightly more than his first election. This visualization represents the conservative share of each election district’s votes (Republican Ed Day + Conservative Party candidate Thomas Sullivan), with high concentrations of conservative votes in red, and low concentrations (and thus votes for liberal candidates) in blue. While the vote distribution is largely similar, Day intensified his hold over Republican strongholds such as Pearl River in the southern section of the county.',
@@ -1751,6 +1751,7 @@ var config = {
         alignment: 'center',
         hidden: false,
         // description: "«»",
+        description: "Ultimately, Leveille, Wilmoth, and Powell all cast doubt on the future of the East Ramapo School District. They also question their own futures in Ramapo, either with plans to move away or cease participation in the public schools.",
         audioOn: 'yes',
         audio: "Audio Files/Ashley outtro.mp3",
         audioOn2: 'yes',
