@@ -121,11 +121,6 @@ config.chapters.forEach((record, idx) => {
         }else{audio.mute=True;}
 
         }
-        if (record.image2) {
-        var image2 = new Image();
-        image2.src = record.image2;
-        chapter.appendChild(image2);
-    }
         if (record.description2) {
         var story = document.createElement('p');
         story.innerHTML = record.description2;
@@ -149,18 +144,13 @@ config.chapters.forEach((record, idx) => {
         }else{audio2.mute=True;}
 
         }
-        if (record.image3) {
-        var image3 = new Image();
-        image3.src = record.image3;
-        chapter.appendChild(image3);
-    }
+
         if (record.description3) {
         var story = document.createElement('p');
         story.innerHTML = record.description3;
         chapter.appendChild(story);
     }
-
-    if (record.audio3) {
+        if (record.audio3) {
         var audioDiv3 = document.createElement('div');
         audioDiv3.setAttribute('class', 'audioContainer');
         audio3 =  document.createElement('audio');
@@ -173,8 +163,8 @@ config.chapters.forEach((record, idx) => {
         chapter.appendChild(audioDiv3);
     }
         if (record.audioOn3) {
-    if(record.audioOn3=='yes'){
-        audio3.mute=false;
+        if(record.audioOn3=='yes'){
+          audio3.mute=false;
         }else{audio3.mute=True;}
 
         }
