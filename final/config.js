@@ -53,7 +53,7 @@ var config = {
             title: '',
             description:"«My dad graduated from Ramapo in 1978. He's been here since he was in like four or five. My mom moved here, probably closer to the 90s, when my sisters were born. But yeah, so all the people in my household went through East Ramapo at some point. My niece is actually at Hempstead [Elementary School] now she's a fifth grader. So like the whole family has been through that system, almost entirely.»",
             description2:" Nathan Powell, a graduate urbanism student at Concordia University, spent his entire childhood in East Ramapo Schools. So did his sister, Ashley Leveille, who is now a member of the district’s school board.  Throughout his upbringing in East Ramapo Schools, Nathan noticed his educational environment changing around him.",
-            description3: "«I started out in East Ramapo in kindergarten, and then I went to Hempstead. Hempstead at that point was a K-e school. And then for grades four to six, you have to go to Colton. And by the time I got to third grade, Colton was sold to the Hasidim. So they made Hempstead from K-3 to K-6, which was like a big change. We used to have like maybe four to five classes per grade that turned into basically two main classes each grade [due to] space concerns.»",
+            description3: "«I started out in East Ramapo in kindergarten, and then I went to Hempstead. Hempstead at that point was a K-3 school. And then for grades four to six, you have to go to Colton. And by the time I got to third grade, Colton was sold to the Hasidim. So they made Hempstead from K-3 to K-6, which was like a big change. We used to have like maybe four to five classes per grade that turned into basically two main classes each grade [due to] space concerns.»",
             description4:"«As a result of Colton’s closing, a lot of people got sent to either Lime Kiln or at that time, Hillcrest, which got closed and sold to the Hasidim and replaced by Kakiat Elementary School.»", 
             description5:"«What they used to do is send the freshmen to a separate building called the Freshman Center to get them used to high school before they went to Ramapo High School and then Ramapo was 10-12, which allowed them to have more space to do more things. That freshman center program also was stopped because they had to reconfigure the school district after they sold another school to the Hasidim. So then the Freshman Center became Kakiat which is now the Kakiat STEAM Academy, which deals with the overflow from what used to be Hempstead and Colton. And then [now] Ramapo is just a high school from 9th grade to 12th grade.»",
             location: {
@@ -346,6 +346,7 @@ var config = {
             hidden: false,
             title: '1960s',
             description:'Around the 1960s, with white flight in full swing, droves of white newcomers flocked to Rockland County from the City to move into new suburban developments. While most of the newcomers were middle-class U.S. born people, a Jewish community from the Skver Hasidic dynasty, many Holocaust survivors, moved to Rockland county from Brooklyn after purchasing a 160-acre dairy farm. The Skverer Hasidim were some of the first of many groups of Hasidim to leave New York City due to fears of assimilation. The group formed New Square Specifically so that they could permit denser housing to be built.',
+            description2: 'Dark green areas have a higher percentage white population. Blue areas have a higher population nonwhite.',
             location: {
                 center: [-73.95988, 41.16000],
 				zoom: 10.3,
@@ -1035,7 +1036,7 @@ var config = {
             hidden: false,
             title: '2010s',
             // image: 'images/source.png',
-            description: "«You know, there's a, there's a strong feeling from the public school community that the Hasidic community is using all of the educational resources, saying that they have it all, and that's not true.» The 2010s saw what many viewed as a takeover of the school system in Rockland County by the Hasidim and other parties favorable to the privatization. As a result, austerity budgets became the norm and forced the East Ramapo School District to sell school buildings and take out loans, bringing it further into debt.",
+            description: "«You know, there's a, there's a strong feeling from the public school community that the Hasidic community is using all of the educational resources, saying that they have it all, and that's not true.» The 2010s saw what many viewed as a takeover of the school system in Rockland County by the Hasidim and other parties favorable to the privatization. As a result, austerity budgets became the norm and forced the East Ramapo School District to sell school buildings and take out loans, bringing it further into debt.»",
             location: {
                 center: [-73.95988, 41.16000],
 				zoom: 10.30,
@@ -1180,7 +1181,7 @@ var config = {
             hidden: false,
             title: '2020s',
             // image: 'images/source.png',
-            description: 'Copy these sections to add to your story.',
+            description: 'Rockland in the present day is far more racially diverse than ever in its history. Areas of Hasidic development are some of the only areas that appear as over 90% white. The Hasidic enclaves of Rockland remain areas of high exclusivity very different than other exclusive White suburbia.',
             location: {
                 center: [-73.95988, 41.16000],
 				zoom: 10.30,
@@ -1314,7 +1315,7 @@ var config = {
             hidden: false,
             image:'images/poland-and-lithuania-yiddish.png',
             title: 'Origins of Hasidism in Central and Eastern Europe',
-            description: '',
+            description: 'Hasidism dates to the 17th century and follows a distinct, conservative doctrine that is a subset of Orthodox Judaism. Hasidism spread over the centuries throughout Europe and organized itself through different dynasties headed by a rebbe, or a sage who serves as the de facto advisor, spokesperson, and religious leader for the community. ',
 
             location: {
               	center: [22.87423, 47.76870],
@@ -1381,7 +1382,7 @@ var config = {
             alignment: 'right',
             hidden: false,
             title: 'All Schools in Rockland',
-            // description: 'Copy these sections to add to your story.',
+            description: 'Darker shades show areas of higher concentration.',
 
             location: {
                 center: [-73.95988, 41.16000],
@@ -1395,20 +1396,123 @@ var config = {
             rotateAnimation: false,
             callback: '',
             onChapterEnter: [
-                {
+{
                     layer: 'all-schools',
                     opacity: 1
                 },
                 {
-                    layer: 'Pomona_label',
+                    layer: 'jewish-schools',
                     opacity: 0
                 },
-                ],
-            onChapterExit: [
                 {
-                    layer: 'all-schools',
+                    layer: 'secular-schools',
                     opacity: 0
                 },
+                {
+                    layer: '2013_county_exec',
+                    opacity: 0
+                },
+                {
+                    layer: '2017_county_exec',
+                    opacity: 0
+                },
+                                {
+                    layer: 'rockland-towns-villages-0ka1by',
+                    opacity: 0
+                    },           
+                            {
+                            layer: '1960-race-637khu',
+                            opacity: 0
+                            },
+                            {
+                            layer: '1970-race-dm6sg6',
+                            opacity: 0
+                            },
+                            {
+                            layer: '1980-race-09ndgz',
+                            opacity: 0
+                            },
+                            {
+                            layer: '1990-race-940279',
+                            opacity: 0
+                            },
+                            {
+                            layer: '2000-race-ar1826',
+                            opacity: 0
+                            }, 
+                            {
+                            layer: '2010-race-36y0ds',
+                            opacity: 0
+                            },
+                            {
+                            layer: '2020-race-5w5o94',
+                            opacity: 0
+                            },              
+                                {
+                                layer: 'New Square 61',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'New Square_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Pomona 1967',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Pomona_label',
+                                    opacity: 0
+                                    },                              
+                                {
+                                layer: 'Wesley Hills 83',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Wesley Hills_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'New Hempstead 84',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'New Hempstead_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Chestnut Ridge 86',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Chestnut Ridge_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Airmont 91',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Airmont_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Montebello 86',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Montebello_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'kaser 91',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'kaser_label',
+                                    opacity: 0
+                                    }                           
+
                 ],
         },
         {
@@ -1417,6 +1521,7 @@ var config = {
             hidden: false,
             title: 'Jewish Schools in Rockland',
             description: 'Jewish schools show to be highly concentrated in Ramapo, and may be the best indicator of where Hasidic enclaves are located.',
+            description2: 'Darker shades show areas of higher concentration.',
 
             location: {
                 center: [-73.95988, 41.16000],
@@ -1450,6 +1555,103 @@ var config = {
                     layer: '2017_county_exec',
                     opacity: 0
                 },
+                                {
+                    layer: 'rockland-towns-villages-0ka1by',
+                    opacity: 0
+                    },           
+                            {
+                            layer: '1960-race-637khu',
+                            opacity: 0
+                            },
+                            {
+                            layer: '1970-race-dm6sg6',
+                            opacity: 0
+                            },
+                            {
+                            layer: '1980-race-09ndgz',
+                            opacity: 0
+                            },
+                            {
+                            layer: '1990-race-940279',
+                            opacity: 0
+                            },
+                            {
+                            layer: '2000-race-ar1826',
+                            opacity: 0
+                            }, 
+                            {
+                            layer: '2010-race-36y0ds',
+                            opacity: 0
+                            },
+                            {
+                            layer: '2020-race-5w5o94',
+                            opacity: 0
+                            },              
+                                {
+                                layer: 'New Square 61',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'New Square_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Pomona 1967',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Pomona_label',
+                                    opacity: 0
+                                    },                              
+                                {
+                                layer: 'Wesley Hills 83',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Wesley Hills_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'New Hempstead 84',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'New Hempstead_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Chestnut Ridge 86',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Chestnut Ridge_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Airmont 91',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Airmont_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Montebello 86',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Montebello_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'kaser 91',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'kaser_label',
+                                    opacity: 0
+                                    }                                   
+
                 ],
         },
         {
@@ -1458,6 +1660,7 @@ var config = {
             hidden: false,
             title: 'Non-Jewish Schools in Rockland',
             description: 'There is a high concentration of secular schools in Haverstraw and Clarkstown. However, when you compare this map to the map of all schools in Rockland County, the school density of these tracts pales in comparison to Hasidic enclaves within and near the Town of Ramapo. Furthermore, we note the blank census tracts in the Town of Ramapo where there are no secular schools at all, where Jewish schools and yeshivas are the only schools in the neighborhood.',
+            description2: 'Darker shades show areas of higher concentration.',
 
             location: {
                 center: [-73.95988, 41.16000],
@@ -1491,6 +1694,102 @@ var config = {
                     layer: '2017_county_exec',
                     opacity: 0
                 },
+                {
+                    layer: 'rockland-towns-villages-0ka1by',
+                    opacity: 0
+                    },           
+                            {
+                            layer: '1960-race-637khu',
+                            opacity: 0
+                            },
+                            {
+                            layer: '1970-race-dm6sg6',
+                            opacity: 0
+                            },
+                            {
+                            layer: '1980-race-09ndgz',
+                            opacity: 0
+                            },
+                            {
+                            layer: '1990-race-940279',
+                            opacity: 0
+                            },
+                            {
+                            layer: '2000-race-ar1826',
+                            opacity: 0
+                            }, 
+                            {
+                            layer: '2010-race-36y0ds',
+                            opacity: 0
+                            },
+                            {
+                            layer: '2020-race-5w5o94',
+                            opacity: 0
+                            },              
+                                {
+                                layer: 'New Square 61',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'New Square_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Pomona 1967',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Pomona_label',
+                                    opacity: 0
+                                    },                              
+                                {
+                                layer: 'Wesley Hills 83',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Wesley Hills_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'New Hempstead 84',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'New Hempstead_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Chestnut Ridge 86',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Chestnut Ridge_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Airmont 91',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Airmont_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'Montebello 86',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'Montebello_label',
+                                    opacity: 0
+                                    },
+                                {
+                                layer: 'kaser 91',
+                                opacity: 0
+                                },
+                                    {
+                                    layer: 'kaser_label',
+                                    opacity: 0
+                                    }                                   
 
                 ],
         },
@@ -1575,11 +1874,11 @@ var config = {
                 },
                 {
                     layer: '2013_county_exec',
-                    opacity: 1
+                    opacity: 0
                 },
                 {
                     layer: '2017_county_exec',
-                    opacity: 0
+                    opacity: 1
                 },
                 ],
         },       
