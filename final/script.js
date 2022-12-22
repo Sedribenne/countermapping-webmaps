@@ -108,7 +108,6 @@ config.chapters.forEach((record, idx) => {
         audioDiv.setAttribute('class', 'audioContainer');
         audio =  document.createElement('audio');
         audio.controls=true;
-        audio.autoplay=true;
         audio.loop=true;
         audio.type="audio/mpeg";
         audio.src = record.audio;
@@ -131,7 +130,6 @@ config.chapters.forEach((record, idx) => {
         audioDiv2.setAttribute('class', 'audioContainer');
         audio2 =  document.createElement('audio');
         audio2.controls=true;
-        audio2.autoplay=true;
         audio2.loop=true;
         audio2.type="audio/mpeg";
         audio2.src = record.audio2;
@@ -155,7 +153,6 @@ config.chapters.forEach((record, idx) => {
         audioDiv3.setAttribute('class', 'audioContainer');
         audio3 =  document.createElement('audio');
         audio3.controls=true;
-        audio3.autoplay=true;
         audio3.loop=true;
         audio3.type="audio/mpeg";
         audio3.src = record.audio3;
